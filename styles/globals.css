@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .icon {
+    @apply h-8 
+      w-7
+      md:w-9 
+      cursor-pointer 
+      md:p-1 
+      md:hover:bg-stone-200 
+      rounded-md 
+      text-gray-700;
+  }
+}

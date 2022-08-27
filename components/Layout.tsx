@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Header from './Header';
 import Footer from './footer/Footer';
-import Showcase from './homepage/showcase/Showcase';
 import { useRouter } from 'next/router';
 
 interface Props {
@@ -19,15 +18,11 @@ interface Props {
 }
 
 export const Layout: React.FC<Props> = ({
+  title,
   description,
   children,
-  title,
   keywords,
   background,
-  mainPage,
-  currentPage,
-  mainPageTitle,
-  currentPageTitle,
   styles,
   width,
 }) => {
@@ -40,13 +35,7 @@ export const Layout: React.FC<Props> = ({
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Head>
-      <Header
-        mainPage={mainPage}
-        currentPage={currentPage}
-        mainPageTitle={mainPageTitle}
-        currentPageTitle={currentPageTitle}
-      />
-      {router.pathname === '/' && <Showcase />}
+      <Header />
       <div className={`${background} ${styles}`}>
         <div className={`${width}`}>{children}</div>
       </div>
