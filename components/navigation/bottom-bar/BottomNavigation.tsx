@@ -1,7 +1,5 @@
 import { HandThumbUpIcon } from '@heroicons/react/24/outline';
 
-import MenuAccordian from './accordian/MenuAccordian';
-
 import {
   BottomNavigationMenu,
   ActionButtonHolder,
