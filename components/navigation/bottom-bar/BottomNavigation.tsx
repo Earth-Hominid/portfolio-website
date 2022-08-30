@@ -1,33 +1,12 @@
-import { HandThumbUpIcon } from '@heroicons/react/24/outline';
+import CallToAction from '@/components/call-to-action/CallToAction';
 
 import {
   BottomNavigationMenu,
   ActionButtonHolder,
   ActionButton,
-  CallToActionButton,
-  ActionButtonSecondSpan,
-  IconHolder,
-  RelativeContainer,
-  AbsoluteContainer,
 } from './Styles';
 
 const BottomNavigation = () => {
-  const BusinessObject = {
-    title: 'My Work',
-    datapoints: [{ name: '', id: '1', url: '/about/' }],
-  };
-
-  const LearningObject = {
-    title: 'About',
-    datapoints: [
-      {
-        name: 'About 1',
-        id: '1',
-        url: '',
-      },
-    ],
-  };
-
   return (
     <BottomNavigationMenu>
       <ActionButtonHolder>
@@ -37,15 +16,7 @@ const BottomNavigation = () => {
         <ActionButton>Software Development</ActionButton>
       </ActionButtonHolder>
       <ActionButtonHolder>
-        <RelativeContainer>
-          <AbsoluteContainer></AbsoluteContainer>
-          <CallToActionButton>
-            <ActionButtonSecondSpan>Work With Me</ActionButtonSecondSpan>
-            <IconHolder>
-              <HandThumbUpIcon />
-            </IconHolder>
-          </CallToActionButton>
-        </RelativeContainer>
+        <CallToAction title="Work With Me" />
       </ActionButtonHolder>
     </BottomNavigationMenu>
   );
