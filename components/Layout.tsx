@@ -9,10 +9,6 @@ interface Props {
   description: string;
   background: string;
   children?: React.ReactNode;
-  mainPage: string;
-  currentPage: string;
-  mainPageTitle: string;
-  currentPageTitle: string;
   styles: string;
   width: string;
 }

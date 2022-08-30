@@ -1,18 +1,60 @@
 import tw from 'tailwind-styled-components';
 
-export const FooterContainer = tw.footer`
-  flex
+export const FooterContainerSmall = tw.footer`
   w-full
-  bg-yellow-50
-  h-12
-  justify-center
-  items-center
   inset-x-0
   bottom-0
 `;
 
+export const MainContainer = tw.div`
+  flex
+  flex-col
+  justify-center
+  items-center
+  mb-10
+  space-y-2
+`;
+
 export const FooterText = tw.p`
  text-gray-600
- font-[Roboto]
+ font-montserrat
  font-medium
+ text-xl
+ py-2
+`;
+
+export const LinkContainer = tw.div`
+  flex
+  flex-row
+  items-center
+`;
+
+export const LinkText = tw.p`
+  text-gray-600
+  px-2
+`;
+
+export const BorderContainer = tw.div`
+  border-r-2
+  border-gray-300
+`;
+
+export const IconHolder = tw.div`
+  relative
+  h-12
+  w-12
+  flex-shrink-0 
+`;
+
+export const LinkButton = tw.button`
+  h-10
+  w-10
+`;
+
+export const BrandIconContainer = tw.div`
+  flex
+  flex-row
+  items-center
+  space-x-4
+  p-2
 `;

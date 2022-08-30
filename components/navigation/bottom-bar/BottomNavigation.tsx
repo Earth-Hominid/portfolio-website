@@ -1,12 +1,16 @@
-import {} from '@heroicons/react/24/outline';
+import { HandThumbUpIcon } from '@heroicons/react/24/outline';
+
 import MenuAccordian from './accordian/MenuAccordian';
 
 import {
   BottomNavigationMenu,
   ActionButtonHolder,
-  IconWrap,
-  NavigationMenu,
-  ButtonLink,
+  ActionButton,
+  CallToActionButton,
+  ActionButtonSecondSpan,
+  IconHolder,
+  RelativeContainer,
+  AbsoluteContainer,
 } from './Styles';
 
 const BottomNavigation = () => {
@@ -28,12 +32,23 @@ const BottomNavigation = () => {
 
   return (
     <BottomNavigationMenu>
-      <ActionButtonHolder></ActionButtonHolder>
-      <ActionButtonHolder></ActionButtonHolder>
-      <NavigationMenu>
-        <MenuAccordian props={LearningObject} />
-        <MenuAccordian props={BusinessObject} />
-      </NavigationMenu>
+      <ActionButtonHolder>
+        <ActionButton>My Work</ActionButton>
+      </ActionButtonHolder>
+      <ActionButtonHolder>
+        <ActionButton>Software Development</ActionButton>
+      </ActionButtonHolder>
+      <ActionButtonHolder>
+        <RelativeContainer>
+          <AbsoluteContainer></AbsoluteContainer>
+          <CallToActionButton>
+            <ActionButtonSecondSpan>Work With Me</ActionButtonSecondSpan>
+            <IconHolder>
+              <HandThumbUpIcon />
+            </IconHolder>
+          </CallToActionButton>
+        </RelativeContainer>
+      </ActionButtonHolder>
     </BottomNavigationMenu>
   );
 };

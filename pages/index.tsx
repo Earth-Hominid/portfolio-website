@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         description="Chris Doll is a Full Stack Developer with offices in Canada and Brazil."
         keywords=""
         background="bg-white"
-        styles=""
+        styles="h-screen"
         width=""
       ></Layout>
 

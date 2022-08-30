@@ -5,7 +5,7 @@
 @layer components {
   .icon {
     @apply h-8 
-      w-7
+      w-8
       md:w-9 
       cursor-pointer 
       md:p-1 

@@ -13,33 +13,67 @@ export const ActionButtonHolder = tw.div`
   flex 
   flex-row
   space-x-2
-  p-3
+  px-3
+  pt-12
+  pb-4
+  text-2xl
+  justify-center
+  text-gray-800
 `;
 
-export const NavigationMenu = tw.div`
+export const ActionButton = tw.button`
+  hover:text-blue-600
 `;
 
-export const IconWrap = tw.div`
-  h-5
-  w-5 
-  mr-1
-`;
-
-export const ButtonLink = tw.button`
-  text-slate-500
-  hover:text-indigo-600
-  hover:bg-white
-  px-2 
-  py-1 
+export const CallToActionButton = tw.button`
+  bg-white
+  py-4
+  px-7
   rounded-lg
-  cursor-pointer
-  hover:border-indigo-600
-  border-transparent
-  border-2
-  hover:border-2
-  duration-300
+  hover:shadow-lg
+  text-white
+  font-montserrat
+  flex
+  items-center
+  space-x-5
+  relative
+  animate-pulse
+  group-hover:animate-bounce
+`;
+
+export const RelativeContainer = tw.div`
+  relative
+  group
+`;
+
+export const AbsoluteContainer = tw.div`
+  absolute
+  rounded-lg
+  -inset-0.5
+  bg-gradient-to-r
+  from-blue-500 to-indigo-500
+  opacity-50
+  blur-sm
+  group-hover:opacity-100
   transition
+  group-hover:duration-300
+  duration-1000
+  group-hover:animate-bounce
+`;
+
+export const ActionButtonSecondSpan = tw.span`
+  text-blue-400
+  group-hover:text-blue-600
+`;
+
+export const IconHolder = tw.div`
+  h-6
+  w-6
+  group-hover:h-8
+  group-hover:w-8
+  text-blue-400
+  duration-500
   ease-in-out
-  text-sm
-  font-semibold
+  transition
+  group-hover:text-blue-600
 `;

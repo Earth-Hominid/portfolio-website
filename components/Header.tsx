@@ -18,6 +18,7 @@ const Header = () => {
   ) => {
     event.preventDefault();
     toggleNavigationButton();
+    document.documentElement.scrollTop = 0;
   };
 
   return (

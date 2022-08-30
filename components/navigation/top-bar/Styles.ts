@@ -3,7 +3,8 @@ import tw from 'tailwind-styled-components';
 export const HeaderContainer = tw.header`
   flex
   bg-white
-  py-2
+  px-2
+  py-4
   sticky
   top-0
   z-50
