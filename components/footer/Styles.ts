@@ -46,11 +46,6 @@ export const IconHolder = tw.div`
   flex-shrink-0 
 `;
 
-export const LinkButton = tw.button`
-  h-10
-  w-10
-`;
-
 export const BrandIconContainer = tw.div`
   flex
   flex-row

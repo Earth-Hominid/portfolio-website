@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Layout } from '@/components/Layout';
+import Hero from '@/components/hero/Hero';
 
 const Home: NextPage = () => {
   return (
@@ -18,9 +19,9 @@ const Home: NextPage = () => {
         background="bg-white"
         styles="h-screen"
         width=""
-      ></Layout>
-
-      <footer></footer>
+      >
+        <Hero />
+      </Layout>
     </>
   );
 };
