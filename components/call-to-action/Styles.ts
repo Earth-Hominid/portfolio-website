@@ -6,8 +6,10 @@ export const ActionButton = tw.button`
 
 export const CallToActionButton = tw.button`
   bg-white
-  py-3
-  px-7
+  py-2
+  px-6
+  md:py-3
+  md:px-7
   rounded-lg
   hover:shadow-lg
   font-rubik
