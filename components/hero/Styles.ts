@@ -7,10 +7,11 @@ export const HeroContainer = tw.footer`
 export const ActionButtonHolder = tw.div`
   flex 
   flex-row
-  text-3xl
+  text-2xl
   justify-center
-  mb-28
-  mt-14
+  mb-20
+  mt-10
+  md:text-3xl
 `;
 
 export const HeroTextContainer = tw.div`
@@ -20,14 +21,14 @@ export const HeroTextContainer = tw.div`
 `;
 
 export const HeroText = tw.h1`
-  text-4xl
+  text-2xl
 `;
 
 export const SubHeroContainer = tw.div`
   flex
   justify-center
   items-center
-  m-10
+  m-8
 `;
 
 export const ParagraphContainer = tw.div`

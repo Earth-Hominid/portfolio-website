@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Layout } from '@/components/Layout';
 import Hero from '@/components/hero/Hero';
 import TechnicalSection from '@/components/technical-section/TechnicalSection';
+import FeaturedProjects from '@/components/featured-projects/FeaturedProjects';
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       >
         <Hero />
         <TechnicalSection />
+        <FeaturedProjects />
       </Layout>
     </>
   );
