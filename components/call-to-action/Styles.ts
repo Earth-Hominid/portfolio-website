@@ -6,15 +6,13 @@ export const ActionButton = tw.button`
 
 export const CallToActionButton = tw.button`
   bg-white
-  py-4
+  py-3
   px-7
   rounded-lg
   hover:shadow-lg
-  text-white
-  font-montserrat
+  font-rubik
   flex
   items-center
-  space-x-5
   relative
   animate-pulse
   group-hover:animate-bounce

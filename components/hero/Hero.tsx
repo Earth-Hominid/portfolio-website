@@ -1,5 +1,7 @@
+import CallToAction from '@/components/call-to-action/CallToAction';
 import {
   HeroContainer,
+  ActionButtonHolder,
   SubHeroContainer,
   ParagraphContainer,
   ParagraphText,
@@ -25,6 +27,9 @@ const Hero = () => {
           </ParagraphContainer>
         </SubHeroContainer>
       </HeroTextContainer>
+      <ActionButtonHolder>
+        <CallToAction title="Work With Me" />
+      </ActionButtonHolder>
     </HeroContainer>
   );
 };

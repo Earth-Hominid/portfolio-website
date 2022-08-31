@@ -1,5 +1,3 @@
-import { HandThumbUpIcon } from '@heroicons/react/24/outline';
-
 interface Props {
   title: string;
 }
@@ -18,9 +16,6 @@ export const CallToAction: React.FC<Props> = ({ title }) => {
       <AbsoluteContainer></AbsoluteContainer>
       <CallToActionButton>
         <ActionButtonSecondSpan>{title}</ActionButtonSecondSpan>
-        <IconHolder>
-          <HandThumbUpIcon />
-        </IconHolder>
       </CallToActionButton>
     </RelativeContainer>
   );

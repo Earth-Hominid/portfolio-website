@@ -4,6 +4,15 @@ export const HeroContainer = tw.footer`
   w-full
 `;
 
+export const ActionButtonHolder = tw.div`
+  flex 
+  flex-row
+  text-3xl
+  justify-center
+  mb-28
+  mt-14
+`;
+
 export const HeroTextContainer = tw.div`
   text-center
   mt-20
@@ -37,9 +46,11 @@ export const ParagraphText = tw.p`
 `;
 
 export const BlueText = tw.span`
-  text-blue-600
+  text-rose-600
+  font-rubik
 `;
 
 export const IndigoText = tw.span`
-  text-indigo-600
+  text-blue-600
+  font-rubik
 `;
