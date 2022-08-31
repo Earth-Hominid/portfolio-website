@@ -2,16 +2,29 @@ import Image from 'next/image';
 
 import { CardContainer, Title, ImageHolder, ParagraphText } from './Styles';
 
+type StaticImageData = {
+  src: string;
+  height: number;
+  width: number;
+  blurDataURL?: string;
+};
+
 interface Props {
   title: string;
   description: string;
-  src: string;
+  src: string | StaticImageData;
+  styles: string;
 }
 
-const TechnicalCard: React.FC<Props> = ({ title, description, src }) => {
+const TechnicalCard: React.FC<Props> = ({
+  title,
+  description,
+  src,
+  styles,
+}) => {
   return (
     <CardContainer>
-      <Title>{title}</Title>
+      <Title className={`${styles}`}>{title}</Title>
       <ImageHolder>
         <Image
           src={src}
@@ -21,7 +34,7 @@ const TechnicalCard: React.FC<Props> = ({ title, description, src }) => {
           layout="fill"
           objectFit="contain"
           priority={true}
-          className="rounded-full"
+          className="rounded-lg"
         />
       </ImageHolder>
       <ParagraphText>{description}</ParagraphText>
@@ -30,5 +43,3 @@ const TechnicalCard: React.FC<Props> = ({ title, description, src }) => {
 };
 
 export default TechnicalCard;
-
-<HTMLImageElement.prototype></HTMLImageElement.prototype>;

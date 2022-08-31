@@ -1,29 +1,33 @@
 import tw from 'tailwind-styled-components';
 
 export const CardContainer = tw.div`
-  max-w-md
-  py-10
-  space-y-10
   flex
   flex-col
+  max-w-md
+  space-y-6
+  px-4
   justify-center
   items-center
+  my-4
+  md:space-y-8
+  py-2
+  
 `;
 
 export const Title = tw.h2`
   uppercase
   underline
   underline-offset-4
-  text-blue-600
-  text-xl
   text-center
-  font-rubik-rubik
+  font-rubik
+  font-bold
+  text-lg
 `;
 
 export const ImageHolder = tw.div`
   relative
-  h-48
-  w-48
+  h-24
+  w-24
   flex-shrink-0
   rounded-lg
 `;

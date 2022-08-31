@@ -7,4 +7,6 @@ export const MainSection = tw.section`
   border-blue-50
   flex
   justify-center
+  flex-wrap
+  lg:space-x-10
 `;
