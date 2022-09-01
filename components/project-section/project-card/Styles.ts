@@ -3,19 +3,20 @@ import tw from 'tailwind-styled-components';
 export const CardContainer = tw.div`
   flex
   flex-col
-  space-y-6
   items-center
   max-w-md
-  p-5
-  lg:my-10
   rounded-md
   hover:shadow-xl
+  my-4
+  mx-2
+
 `;
 
 export const ImageHolder = tw.div`
   relative 
   h-64 
   w-96
+  my-6
   
 `;
 
@@ -24,6 +25,7 @@ export const CardTitle = tw.h4`
   font-bold
   text-lg
   font-rubik
+  mb-6
 `;
 
 export const CardDescription = tw.p`
@@ -32,18 +34,22 @@ export const CardDescription = tw.p`
   text-center
   leading-relaxed
   tracking-normal
-  px-5
+  mb-6
+  mx-6
 `;
 
 export const TechnologyDescription = tw.p`
   text-center
   font-rubik
+  mb-6
+  mx-6
 `;
 
 export const ActionButtonHolder = tw.div`
   flex
   flex-row
   space-x-2
+  mb-10
 `;
 
 export const WebsiteButton = tw.button`
@@ -55,8 +61,6 @@ export const WebsiteButton = tw.button`
   rounded-full
   bg-white
   shadow-md
-  animate-bounce
-  hover:animate-none
   transition
   duration-500
   group
@@ -66,10 +70,4 @@ export const IconHolder = tw.div`
   h-6
   w-6
   ml-2
-`;
-
-export const GithubButton = tw.button``;
-
-export const SVGHolder = tw.div`
-
 `;
