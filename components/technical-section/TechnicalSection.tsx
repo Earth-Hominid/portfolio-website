@@ -1,7 +1,7 @@
-import TechnicalCard from '@/components/technical-card/TechnicalCard';
+import TechnicalCard from '@/components/technical-section/technical-card/TechnicalCard';
 
-import Computer from '@/public/computer.png';
-import Whiteboard from '@/public/whiteboard.png';
+import Computer from '@/public/images/computer.png';
+import Whiteboard from '@/public/images/whiteboard.png';
 
 import { MainSection } from './Styles';
 
