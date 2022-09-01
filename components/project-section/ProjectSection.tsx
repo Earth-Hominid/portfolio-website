@@ -20,6 +20,7 @@ const ProjectSection = () => {
           styles="text-black bg-rose-50"
           textColor="text-black"
           buttonColor="hover:bg-rose-300 bg-white text-black transition duration-300 hover:text-white"
+          fillColor="white"
           websiteAddress="https://github.com/Earth-Hominid/Business-Communication-Platform-Full-Stack"
           githubAddress="https://rbsdocsfrontend.vercel.app/"
         />
@@ -34,17 +35,19 @@ const ProjectSection = () => {
           buttonColor="hover:bg-indigo-500 bg-white hover:text-white"
           websiteAddress="https://blog-creator-mern-app.herokuapp.com/"
           githubAddress="https://github.com/Earth-Hominid/Blog-Creator-API"
+          fillColor="white"
         />
         <ProjectCard
           title="Chair Mart"
           src={ProjectThree}
           technology="React | React Router | Jest"
           description="An E-commerce Furniture Store mock-up with shopping cart"
-          styles="text-black bg-stone-100"
+          styles="text-black bg-gray-100"
           textColor="text-black"
-          buttonColor="hover:bg-stone-400 bg-white hover:text-white"
+          buttonColor="hover:bg-[#ffe0c3] bg-white"
           websiteAddress="https://earth-hominid.github.io/Chair-Mart/"
           githubAddress="https://github.com/Earth-Hominid/Chair-Mart"
+          fillColor="black"
         />
       </CardContainer>
     </MainSection>
