@@ -16,8 +16,9 @@ const ProjectSection = () => {
         src={ProjectOne}
         technology="TypeScript | Node | PostgreSQL | NextJS |  StrapiJS Headless CMS"
         description="An easy to use web application that strengthens business organizations by providing an infrastructure for learning and secure collaboration."
-        styles="text-black bg-rose-100"
+        styles="text-black bg-rose-50"
         textColor="text-black"
+        buttonColor="hover:bg-rose-300 bg-white text-black transition duration-300 hover:text-white"
       />
       <ProjectCard
         title="Blog Creator API"
@@ -27,14 +28,16 @@ const ProjectSection = () => {
         description=""
         styles="text-black bg-indigo-50"
         textColor="text-black"
+        buttonColor="hover:bg-indigo-500 bg-white hover:text-white"
       />
       <ProjectCard
         title="Chair Mart"
         src={ProjectThree}
         technology="React | React Router | Jest"
         description="An E-commerce Furniture Store mock-up with shopping cart"
-        styles="text-black bg-gray-100"
-        textColor=""
+        styles="text-black bg-stone-100"
+        textColor="text-black"
+        buttonColor="hover:bg-stone-400 bg-white hover:text-white"
       />
     </MainSection>
   );
