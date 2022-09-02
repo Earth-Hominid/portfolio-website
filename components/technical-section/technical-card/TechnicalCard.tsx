@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 
-import { CardContainer, Title, ImageHolder, ParagraphText } from './Styles';
+import { CardContainer, Title, ParagraphText } from './Styles';
 
 type StaticImageData = {
   src: string;
@@ -25,16 +25,14 @@ const TechnicalCard: React.FC<Props> = ({
   return (
     <CardContainer>
       <Title className={`${styles}`}>{title}</Title>
-      <ImageHolder>
-        <Image
-          src={src}
-          alt="3D render of computer"
-          layout="fill"
-          objectFit="contain"
-          priority={true}
-          className="rounded-lg"
-        />
-      </ImageHolder>
+
+      <Image
+        src={src}
+        alt="3D render of computer"
+        priority={true}
+        className="rounded-full object-cover w-52 h-52"
+      />
+
       <ParagraphText>{description}</ParagraphText>
     </CardContainer>
   );

@@ -14,28 +14,18 @@ export const CardContainer = tw.div`
 `;
 
 export const Title = tw.h2`
-  uppercase
-  underline
-  underline-offset-4
   text-center
-  font-rubik
+  font-poppins
   font-bold
-  text-xl
-`;
-
-export const ImageHolder = tw.div`
-  relative
-  h-24
-  w-24
-  flex-shrink-0
-  rounded-lg
+  text-3xl
 `;
 
 export const ParagraphText = tw.p`
   leading-relaxed
   tracking-wide
   text-center
-  text-gray-800
+  text-gray-700
   font-montserrat
+  font-semibold
   pb-6
 `;
