@@ -1,9 +1,5 @@
 import tw from 'tailwind-styled-components';
 
-export const ActionButton = tw.button`
-  hover:text-blue-600
-`;
-
 export const CallToActionButton = tw.button`
   bg-white
   py-2
@@ -16,8 +12,6 @@ export const CallToActionButton = tw.button`
   flex
   items-center
   relative
-  animate-pulse
-  group-hover:animate-bounce
 `;
 
 export const RelativeContainer = tw.div`
@@ -31,17 +25,17 @@ export const AbsoluteContainer = tw.div`
   -inset-0.5
   bg-gradient-to-r
   from-blue-500 to-indigo-500
-  opacity-50
+  opacity-90
   blur-sm
   group-hover:opacity-100
   transition
   group-hover:duration-300
   duration-1000
-  group-hover:animate-bounce
+  
 `;
 
 export const ActionButtonSecondSpan = tw.span`
-  text-blue-400
+  text-blue-500
   group-hover:text-blue-600
 `;
 

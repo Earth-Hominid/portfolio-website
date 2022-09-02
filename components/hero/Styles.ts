@@ -6,7 +6,7 @@ export const HeroContainer = tw.footer`
 
 export const HeroTextContainer = tw.div`
   text-center
-  mt-10
+  mt-6
   mx-5
 `;
 
@@ -16,7 +16,6 @@ export const HeroText = tw.h1`
   tracking-wide
   font-poppins
   text-left
-  md:text-center
   mx-3
 `;
 

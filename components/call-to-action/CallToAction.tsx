@@ -5,7 +5,6 @@ interface Props {
 import {
   CallToActionButton,
   ActionButtonSecondSpan,
-  IconHolder,
   RelativeContainer,
   AbsoluteContainer,
 } from './Styles';

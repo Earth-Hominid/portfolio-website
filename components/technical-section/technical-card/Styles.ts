@@ -10,6 +10,7 @@ export const CardContainer = tw.div`
   items-center
   my-4
   lg:my-10
+  border-b-[1px]
 `;
 
 export const Title = tw.h2`
@@ -19,7 +20,7 @@ export const Title = tw.h2`
   text-center
   font-rubik
   font-bold
-  text-lg
+  text-xl
 `;
 
 export const ImageHolder = tw.div`
@@ -36,4 +37,5 @@ export const ParagraphText = tw.p`
   text-center
   text-gray-800
   font-montserrat
+  pb-6
 `;
