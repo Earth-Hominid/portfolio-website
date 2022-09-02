@@ -9,15 +9,13 @@ export const CardContainer = tw.div`
   hover:shadow-xl
   my-4
   mx-2
-
 `;
 
 export const ImageHolder = tw.div`
   relative 
-  h-64 
+  h-64
   w-96
   my-6
-  
 `;
 
 export const CardTitle = tw.h4`
@@ -25,6 +23,7 @@ export const CardTitle = tw.h4`
   font-bold
   text-lg
   font-rubik
+  mt-4
   mb-6
 `;
 
@@ -33,16 +32,18 @@ export const CardDescription = tw.p`
   font-montserrat
   text-center
   leading-relaxed
-  tracking-normal
+  tracking-
+  max-w-xs
   mb-6
-  mx-6
 `;
 
 export const TechnologyDescription = tw.p`
   text-center
   font-rubik
+  max-w-xs
   mb-6
-  mx-6
+
+  
 `;
 
 export const ActionButtonHolder = tw.div`

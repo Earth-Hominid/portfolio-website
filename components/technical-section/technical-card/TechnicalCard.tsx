@@ -28,8 +28,6 @@ const TechnicalCard: React.FC<Props> = ({
       <ImageHolder>
         <Image
           src={src}
-          width={200}
-          height={200}
           alt="3D render of computer"
           layout="fill"
           objectFit="contain"

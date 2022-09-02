@@ -4,24 +4,20 @@ export const HeroContainer = tw.footer`
   w-full
 `;
 
-export const ActionButtonHolder = tw.div`
-  flex 
-  flex-row
-  text-2xl
-  justify-center
-  mb-20
-  mt-10
-  md:text-3xl
-`;
-
 export const HeroTextContainer = tw.div`
   text-center
-  mt-20
+  mt-10
   mx-5
 `;
 
 export const HeroText = tw.h1`
-  text-2xl
+  text-4xl
+  leading-snug
+  tracking-wide
+  font-poppins
+  text-left
+  md:text-center
+  mx-3
 `;
 
 export const SubHeroContainer = tw.div`
@@ -47,11 +43,27 @@ export const ParagraphText = tw.p`
 `;
 
 export const BlueText = tw.span`
-  text-rose-600
+  text-blue-600
   font-rubik
 `;
 
 export const IndigoText = tw.span`
-  text-blue-600
+  text-indigo-600
   font-rubik
+`;
+
+export const BlueUnderline = tw.span`
+  underline-offset-4
+  decoration-blue-600
+  underline
+`;
+
+export const ActionButtonHolder = tw.div`
+  flex 
+  flex-row
+  text-2xl
+  justify-center
+  mb-10
+  mt-10
+  md:text-3xl
 `;

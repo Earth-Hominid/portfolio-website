@@ -9,13 +9,17 @@ import {
   HeroTextContainer,
   BlueText,
   IndigoText,
+  BlueUnderline,
 } from './Styles';
 
 const Hero = () => {
   return (
     <HeroContainer>
       <HeroTextContainer>
-        <HeroText>Let's Create Something Great Together</HeroText>
+        <HeroText>
+          {`Let's Create Something`} <BlueUnderline>Great </BlueUnderline>
+          Together
+        </HeroText>
         <SubHeroContainer>
           <ParagraphContainer>
             <ParagraphText>
