@@ -76,7 +76,7 @@ const ProjectSection = () => {
         />
         <ProjectCard
           title="Resume Builder"
-          description="A modern React one page web app which empowers users to create their own resume with automatic formating."
+          description="A modern one page web application providing users the ability to produce and format their own resume."
           src={ProjectSix}
           technology="React | CSS3"
           textColor=""
@@ -84,6 +84,7 @@ const ProjectSection = () => {
           buttonColor="bg-white hover:bg-[#02BD9D] hover:text-black"
           websiteAddress="https://earth-hominid.github.io/Resume-Builder-2.0/"
           githubAddress="https://github.com/Earth-Hominid/Resume-Builder-2.0"
+          fillColor="group-hover:fill-black"
         />
       </CardContainer>
     </MainSection>
