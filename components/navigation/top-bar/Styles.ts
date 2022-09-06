@@ -8,6 +8,7 @@ export const HeaderContainer = tw.header`
   sticky
   top-0
   z-50
+  md:hidden
 `;
 
 export const ExtendedContainer = tw.div`
@@ -26,10 +27,10 @@ export const ButtonContainer = tw.div`
   justify-end
   hidden
   md:inline-flex
- space-x-1
- mx-1
- lg:mx-2
- lg:space-x-6
+  space-x-1
+  mx-1
+  lg:mx-2
+  lg:space-x-6
 `;
 
 export const HamburgerContainer = tw.div`
@@ -41,5 +42,7 @@ export const LogoText = tw.p`
   text-2xl
   mx-4
   font-bold
-  text-gray-700
+  text-gray-600
+  md:text-4xl
+  md:mx-10
 `;

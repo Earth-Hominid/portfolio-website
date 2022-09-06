@@ -1,7 +1,8 @@
 import tw from 'tailwind-styled-components';
 
-export const HeroContainer = tw.footer`
+export const HeroContainer = tw.section`
   w-full
+  md:hidden
 `;
 
 export const HeroTextContainer = tw.div`

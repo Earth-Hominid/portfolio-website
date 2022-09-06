@@ -4,7 +4,8 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/styles/*": ["styles/*"],
-      "@/public/*": ["public/*"]
+      "@/public/*": ["public/*"],
+      "@/data/*": ["data/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -21,6 +22,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/carousel-section/CarouselSection.jsx"],
   "exclude": ["node_modules"]
 }

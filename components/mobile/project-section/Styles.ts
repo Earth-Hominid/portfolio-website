@@ -4,12 +4,14 @@ export const MainSection = tw.section`
   flex
   flex-col
   w-full
+  md:hidden
 `;
 
 export const SectionTitle = tw.h3`
-  text-xl
+  text-3xl
   text-black
   text-center
+  mb-5
 `;
 
 export const CardContainer = tw.div`
@@ -17,5 +19,4 @@ export const CardContainer = tw.div`
   flex
   flex-col
   items-center
-  md:hidden
 `;

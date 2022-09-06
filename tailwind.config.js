@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './public/**/*.{js,ts,jsx,tsx}',
+    './data/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     container: {
@@ -21,6 +22,10 @@ module.exports = {
         rubik: ['Rubik', 'sans-serif'],
         rubikmaze: ['Rubik Maze', 'cursive'],
         tinos: ['Tinos', 'serif'],
+      },
+      backgroundImage: {
+        'layer-one': "url('./public/svgs/layer1.svg')",
+        'layer-two': "url('./public/svgs/layer2.svg')",
       },
     },
   },

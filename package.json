@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.8",
+    "framer-motion": "^7.2.1",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-swipeable": "^7.0.0",
     "tailwind-styled-components": "^2.1.8"
   },
   "devDependencies": {

@@ -1,15 +1,9 @@
 import Image from 'next/future/image';
 import Link from 'next/link';
-import {
-  ArrowUpRightIcon,
-  ArrowRightIcon,
-  CodeBracketIcon,
-  ComputerDesktopIcon,
-} from '@heroicons/react/24/outline';
+import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 
 import {
   CardContainer,
-  ImageHolder,
   CardTitle,
   CardDescription,
   TechnologyDescription,
@@ -26,11 +20,12 @@ type StaticImageData = {
 };
 
 interface Props {
+  id: string;
   title: string;
   description: string;
   technology: string;
   textColor: string;
-  src: string | StaticImageData;
+  src: StaticImageData;
   styles: string;
   buttonColor: string;
   websiteAddress: string;
@@ -39,12 +34,13 @@ interface Props {
 }
 
 const ProjectCard: React.FC<Props> = ({
-  src,
+  id,
   title,
+  src,
   description,
-  styles,
   technology,
   textColor,
+  styles,
   buttonColor,
   websiteAddress,
   githubAddress,
@@ -60,10 +56,11 @@ const ProjectCard: React.FC<Props> = ({
     <CardContainer className={styles}>
       <Image
         src={src}
-        alt="Portfolio Project"
+        alt={`Project ${id}`}
         priority={true}
         className="rounded-t-md object-fit w-96 h-64 mx-5 mt-5"
       />
+
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
       <TechnologyDescription className={textColor}>

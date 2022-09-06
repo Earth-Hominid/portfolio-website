@@ -2,9 +2,11 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Layout } from '@/components/Layout';
-import Hero from '@/components/hero/Hero';
-import TechnicalSection from '@/components/technical-section/TechnicalSection';
-import ProjectSection from '@/components/project-section/ProjectSection';
+import Hero from '@/components/mobile/hero/Hero';
+import HeroSection from '@/components/web/hero/HeroSection';
+import TechnicalSection from '@/components/mobile/technical-section/TechnicalSection';
+import ProjectSection from '@/components/mobile/project-section/ProjectSection';
+import CarouselSection from '@/components/carousel-section/CarouselSection';
 
 const Home: NextPage = () => {
   return (
@@ -23,8 +25,19 @@ const Home: NextPage = () => {
         width=""
       >
         <Hero />
+        <HeroSection />
         <TechnicalSection />
         <ProjectSection />
+        <CarouselSection
+          slides={[
+            '/public/images/learning.png',
+            '/public/images/vivacity.png',
+            '/public/images/chair.png',
+            '/public/images/seeds.png',
+            '/public/images/memory.png',
+            '/public/images/resume-builder',
+          ]}
+        />
       </Layout>
     </>
   );
