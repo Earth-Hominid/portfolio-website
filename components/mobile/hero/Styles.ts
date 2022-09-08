@@ -3,7 +3,8 @@ import tw from 'tailwind-styled-components';
 export const HeroContainer = tw.section`
   w-full
   md:hidden
-  max-w-lg
+  max-w-md
+  sm:max-w-xl
   mx-auto
 `;
 
@@ -19,14 +20,14 @@ export const HeroText = tw.h1`
   tracking-wide
   font-poppins
   text-left
-  mx-3
+  mx-2
 `;
 
 export const SubHeroContainer = tw.div`
   flex
   justify-center
   items-center
-  m-8
+  mt-5
 `;
 
 export const ParagraphContainer = tw.div`
