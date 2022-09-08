@@ -30,7 +30,7 @@ const TechnicalCard: React.FC<Props> = ({
         src={src}
         alt="3D render of computer"
         priority={true}
-        className="rounded-full object-cover w-52 h-52"
+        className="rounded-full object-cover w-52 h-52 shadow-xl"
       />
 
       <ParagraphText>{description}</ParagraphText>

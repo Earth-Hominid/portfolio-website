@@ -5,6 +5,7 @@ import { Layout } from '@/components/Layout';
 import Hero from '@/components/mobile/hero/Hero';
 import HeroSection from '@/components/web/hero/HeroSection';
 import TechnicalSection from '@/components/mobile/technical-section/TechnicalSection';
+import WebTechnicalSection from '@/components/web/technical-section/WebTechnicalSection';
 import ProjectSection from '@/components/mobile/project-section/ProjectSection';
 import CarouselSection from '@/components/carousel-section/CarouselSection';
 
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
         <Hero />
         <HeroSection />
         <TechnicalSection />
+        <WebTechnicalSection />
         <ProjectSection />
         <CarouselSection
           slides={[

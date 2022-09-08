@@ -10,7 +10,7 @@ export const HeroContainer = tw.div`
   flex
   flex-col
   max-w-xl
-  mt-10
+  mt-12
   mx-auto
   text-center
   justify-center
@@ -46,7 +46,7 @@ export const SubHeroContainer = tw.div`
   justify-center
   items-center
   mx-auto
-  mt-8
+  my-10
   max-w-lg
 `;
 
@@ -75,6 +75,6 @@ export const ActionButtonHolder = tw.div`
   text-2xl
   justify-center
   mb-10
-  mt-10
+  mt-5
   md:text-3xl
 `;
