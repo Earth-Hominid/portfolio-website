@@ -42,7 +42,7 @@ export const LogoText = tw.p`
   text-2xl
   mx-4
   font-bold
-  text-gray-600
+  text-black
   md:text-4xl
   md:mx-10
 `;
