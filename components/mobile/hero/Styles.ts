@@ -3,6 +3,8 @@ import tw from 'tailwind-styled-components';
 export const HeroContainer = tw.section`
   w-full
   md:hidden
+  max-w-lg
+  mx-auto
 `;
 
 export const HeroTextContainer = tw.div`
