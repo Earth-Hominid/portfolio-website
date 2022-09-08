@@ -7,55 +7,6 @@ export const MainContainer = tw.section`
   md:flex-col
 `;
 
-export const Navigation = tw.nav`
-  flex
-  flex-row
-  w-full
-  items-center
-`;
-
-export const LogoHolder = tw.div`
-  p-2
-  mx-2
-  whitespace-nowrap
-`;
-
-export const LogoText = tw.p`
-  font-montserrat
-  text-3xl
-  font-semibold
-  text-black
-`;
-
-export const ActionButtonsContainer = tw.div`
-  flex
-  flex-row-reverse
-  mx-auto
-  w-full
-
-`;
-
-export const ActionButtonHolder = tw.div`
-  flex
-  items-center
-  p-2
-  m-2
-`;
-
-export const ActionButtonText = tw.a`
-  text-black
-  text-lg
-  hover:underline-offset-4
-  hover:underline
-  decoration-blue-600
-  decoration-wavy
-  decoration-3
-  decoration
-  transition
-  duration-300
-  cursor-pointer
-`;
-
 export const Spacer = tw.div`
   w-full
   aspect-video
@@ -64,11 +15,11 @@ export const Spacer = tw.div`
   bg-cover
 `;
 
-export const HeroTextContainer = tw.div`
+export const HeroContainer = tw.div`
   flex
-  max-w-lg
-  mt-20
-  mx-40
+  max-w-xl
+  mt-10
+  mx-auto
   text-center
   justify-center
 `;

@@ -1,11 +1,5 @@
 import {
-  HeroTextContainer,
-  Navigation,
-  LogoHolder,
-  ActionButtonsContainer,
-  ActionButtonHolder,
-  ActionButtonText,
-  LogoText,
+  HeroContainer,
   BlueUnderline,
   HeroText,
   MainContainer,
@@ -15,12 +9,12 @@ import {
 const HeroSection = () => {
   return (
     <MainContainer>
-      <HeroTextContainer>
+      <HeroContainer>
         <HeroText>
           {`Let's Create Something`} <BlueUnderline>Great </BlueUnderline>{' '}
           Together
         </HeroText>
-      </HeroTextContainer>
+      </HeroContainer>
     </MainContainer>
   );
 };
