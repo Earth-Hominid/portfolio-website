@@ -7,7 +7,7 @@ import { MainSection } from './Styles';
 
 const TechnicalSection = () => {
   return (
-    <MainSection>
+    <MainSection id="technical_section">
       <TechnicalCard
         title="Software Development"
         description="I build rich web products in collaboration with clients. I use the latest technology, creating blazingly fast API's with coding best practices."

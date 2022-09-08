@@ -1,19 +1,15 @@
 import CallToAction from '@/components/call-to-action/CallToAction';
 
-import {
-  BottomNavigationMenu,
-  ActionButtonHolder,
-  ActionButton,
-} from './Styles';
+import { BottomNavigationMenu, ActionButtonHolder, ActionLink } from './Styles';
 
 const BottomNavigation = () => {
   return (
     <BottomNavigationMenu>
       <ActionButtonHolder>
-        <ActionButton>My Work</ActionButton>
+        <ActionLink href="#project_section">My Work</ActionLink>
       </ActionButtonHolder>
       <ActionButtonHolder>
-        <ActionButton>Software Development</ActionButton>
+        <ActionLink href="#technical_section">Software Development</ActionLink>
       </ActionButtonHolder>
       <ActionButtonHolder>
         <CallToAction title="Work With Me" />

@@ -10,7 +10,7 @@ import { MainSection, SectionTitle, CardContainer } from './Styles';
 
 const ProjectSection = () => {
   return (
-    <MainSection>
+    <MainSection id="project_section">
       <SectionTitle>Featured Projects</SectionTitle>
       <CardContainer>
         <ProjectCard

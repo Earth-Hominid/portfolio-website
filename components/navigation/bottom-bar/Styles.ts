@@ -21,7 +21,7 @@ export const ActionButtonHolder = tw.div`
   text-gray-800
 `;
 
-export const ActionButton = tw.button`
+export const ActionLink = tw.a`
   hover:text-blue-600
 `;
 

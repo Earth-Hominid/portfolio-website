@@ -2,16 +2,15 @@ import tw from 'tailwind-styled-components';
 
 export const CallToActionButton = tw.button`
   bg-white
-  py-2
+  py-4
   px-6
-  md:py-3
-  md:px-7
   rounded-lg
   hover:shadow-lg
   font-rubik
   flex
   items-center
   relative
+  tracking-wider
 `;
 
 export const RelativeContainer = tw.div`
