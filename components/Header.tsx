@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import TopNavigation from './navigation/top-bar/TopNavigation';
-import BottomNavigation from './navigation/bottom-bar/BottomNavigation';
+import TopNavigation from './mobile/navigation/top-bar/TopNavigation';
+import BottomNavigation from './mobile/navigation/bottom-bar/BottomNavigation';
 
 const Header = () => {
   const [navigationMenuToggle, setNavigationMenuToggle] = useState(false);

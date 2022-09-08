@@ -59,6 +59,7 @@ export const BlueUnderline = tw.span`
   underline-offset-4
   decoration-blue-600
   underline
+  decoration-wavy
 `;
 
 export const ActionButtonHolder = tw.div`

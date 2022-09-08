@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from './Header';
+import WebHeader from './web/navigation/WebHeader';
 import Footer from './footer/Footer';
 import { useRouter } from 'next/router';
 
@@ -31,6 +32,7 @@ export const Layout: React.FC<Props> = ({
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Head>
+      <WebHeader />
       <Header />
       <div className={`${background} ${styles}`}>
         <div className={`${width}`}>{children}</div>
