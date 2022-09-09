@@ -4,4 +4,5 @@ export const MainContainer = tw.section`
   w-full
   hidden
   md:flex
+  flex-col
 `;

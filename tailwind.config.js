@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -7,6 +9,10 @@ module.exports = {
     './data/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      xs: '540px',
+      ...defaultTheme.screens,
+    },
     container: {
       center: true,
     },

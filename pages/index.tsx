@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import { Layout } from '@/components/Layout';
 import Hero from '@/components/mobile/hero/Hero';
 import HeroSection from '@/components/web/hero/HeroSection';
@@ -8,6 +7,7 @@ import TechnicalSection from '@/components/mobile/technical-section/TechnicalSec
 import WebTechnicalSection from '@/components/web/technical-section/WebTechnicalSection';
 import ProjectSection from '@/components/mobile/project-section/ProjectSection';
 import CarouselSection from '@/components/carousel-section/CarouselSection';
+import Grid from '@/components/grid/Grid';
 
 const Home: NextPage = () => {
   return (
@@ -30,6 +30,7 @@ const Home: NextPage = () => {
         <TechnicalSection />
         <WebTechnicalSection />
         <ProjectSection />
+        <Grid />
         <CarouselSection
           slides={[
             '/public/images/learning.png',
