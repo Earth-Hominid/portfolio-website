@@ -5,19 +5,21 @@ import {
   RoseCard,
   SectionTitle,
   Subheading,
+  TextContainer,
 } from './Styles';
 
 const Grid = () => {
   return (
     <MainSection>
       <MainContainer>
-        <SectionTitle>
-          <span className="bg-yellow-200 md:col-span-2">Featured Projects</span>
-        </SectionTitle>
-        <Subheading>
-          I am a full stack developer, specializing in the JavaScript Ecosystem.
-          Learn more about my latest web applications.
-        </Subheading>
+        <TextContainer>
+          <SectionTitle>Featured Projects</SectionTitle>
+          <Subheading>
+            I am a full stack developer, specializing in the JavaScript
+            Ecosystem. Learn more about my latest web applications.
+          </Subheading>
+        </TextContainer>
+
         <BlueCard></BlueCard>
         <RoseCard></RoseCard>
         <BlueCard></BlueCard>

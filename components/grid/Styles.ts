@@ -1,9 +1,12 @@
 import tw from 'tailwind-styled-components';
 
 export const MainSection = tw.section`
-  grid
+  md:grid
   place-items-center
   min-h-screen
+  hidden
+  bg-gray-100
+
 `;
 
 export const MainContainer = tw.div`
@@ -14,35 +17,43 @@ export const MainContainer = tw.div`
   xs:grid-cols-2
 `;
 
+export const TextContainer = tw.div`
+  flex
+  flex-col
+  row-start-1
+  grid-cols-2
+  mx-2
+`;
+
 export const SectionTitle = tw.h1`
   text-4xl
   font-extrabold
-  xs:col-span-2
-  xs:grid
-  xs:gap-4
-  xs:grid-cols-2
   mb-2
   xs:mb-4
 `;
 
 export const Subheading = tw.p`
-  xs:row-start-2 
   font-montserrat
   text-lg
   tracking-wide
   leading-relaxed
+  md:text-lg
 `;
 
 export const BlueCard = tw.div`
-  h-20 
+  h-16
   bg-blue-600
+  shadow-xl
   xs:h-auto
   xs:square
+  rounded-xl
 `;
 
 export const RoseCard = tw.div`
-  h-12
+  h-16
   bg-rose-600
+  shadow-xl
+  rounded-xl
   xs:h-auto
   xs:square
 `;
