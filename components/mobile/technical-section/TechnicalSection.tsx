@@ -1,7 +1,7 @@
 import TechnicalCard from '@/components/mobile/technical-section/technical-card/TechnicalCard';
 
 import Computer from '@/public/images/3d-comp.png';
-import Whiteboard from '@/public/images/whiteboard.png';
+import Whiteboard from '@/public/images/dall-doll.png';
 
 import { MainSection } from './Styles';
 

@@ -27,7 +27,7 @@ export const TextContainer = tw.div`
 
 export const SectionTitle = tw.h1`
   text-4xl
-  font-extrabold
+  font-bold
   mb-2
   xs:mb-4
 `;
@@ -42,7 +42,8 @@ export const Subheading = tw.p`
 
 export const BlueCard = tw.div`
   h-16
-  bg-blue-600
+  border-[1px]
+  border-gray-300
   shadow-xl
   xs:h-auto
   xs:square
@@ -51,9 +52,10 @@ export const BlueCard = tw.div`
 
 export const RoseCard = tw.div`
   h-16
-  bg-rose-600
+  border-[1px]
+  border-rose-300
   shadow-xl
-  rounded-xl
   xs:h-auto
   xs:square
+  rounded-xl
 `;

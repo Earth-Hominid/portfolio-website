@@ -1,12 +1,17 @@
 import {
-  BlueCard,
   MainSection,
   MainContainer,
-  RoseCard,
   SectionTitle,
   Subheading,
   TextContainer,
 } from './Styles';
+
+import CardOne from './grid-cards/CardOne';
+import CardTwo from './grid-cards/CardTwo';
+import CardThree from './grid-cards/CardThree';
+import CardFour from './grid-cards/CardFour';
+import CardFive from './grid-cards/CardFive';
+import CardSix from './grid-cards/CardSix';
 
 const Grid = () => {
   return (
@@ -19,13 +24,12 @@ const Grid = () => {
             Ecosystem. Learn more about my latest web applications.
           </Subheading>
         </TextContainer>
-
-        <BlueCard></BlueCard>
-        <RoseCard></RoseCard>
-        <BlueCard></BlueCard>
-        <RoseCard></RoseCard>
-        <BlueCard></BlueCard>
-        <RoseCard></RoseCard>
+        <CardOne />
+        <CardTwo />
+        <CardThree />
+        <CardFour />
+        <CardFive />
+        <CardSix />
       </MainContainer>
     </MainSection>
   );
