@@ -6,9 +6,9 @@ import {
   TextContainer,
 } from './Styles';
 
-import CardOne from './grid-cards/CardOne';
-import CardTwo from './grid-cards/CardTwo';
-import CardThree from './grid-cards/CardThree';
+import CardOne from './custom-cards/CustomOne/CustomOne';
+import CardTwo from './custom-cards/CustomTwo/CustomTwo';
+import CardThree from './custom-cards/CustomThree/CustomeThree';
 import CardFour from './grid-cards/CardFour';
 import CardFive from './grid-cards/CardFive';
 import CardSix from './grid-cards/CardSix';

@@ -17,6 +17,7 @@ export const CardTitle = tw.h4`
   font-rubik
   my-3
   lg:my-4
+  text-[#ff7b54]
 `;
 
 export const CardDescription = tw.p`
@@ -70,4 +71,11 @@ export const IconHolder = tw.div`
   h-6
   w-6
   ml-2
+`;
+
+export const Wavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-black
 `;

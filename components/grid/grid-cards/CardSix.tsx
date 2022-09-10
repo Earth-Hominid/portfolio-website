@@ -10,11 +10,12 @@ const GridCardSix = () => {
       src={ProjectSix}
       technology="React | CSS3"
       textColor=""
-      styles="bg-indigo-100 border-[1px] shadow-xl border-indigo-300"
+      styles="bg-gray-100 border-[1px] shadow-xl border-gray-300"
       buttonColor="bg-white hover:bg-[#02BD9D] hover:text-white"
       websiteAddress="https://earth-hominid.github.io/Resume-Builder-2.0/"
       githubAddress="https://github.com/Earth-Hominid/Resume-Builder-2.0"
       fillColor="group-hover:fill-white"
+      titleStyles="text-black"
     />
   );
 };

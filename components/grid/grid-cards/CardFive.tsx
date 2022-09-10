@@ -10,11 +10,12 @@ const GridCardFive = () => {
       src={ProjectFive}
       technology="React | CSS3"
       textColor=""
-      styles="bg-blue-100 border-[1px] shadow-xl border-blue-300"
+      styles="bg-gray-100 border-[1px] shadow-xl border-gray-300"
       buttonColor="bg-white hover:bg-[#16181D] hover:text-[#D3AF37]"
       websiteAddress="https://earth-hominid.github.io/Memory-Game/"
       githubAddress="https://github.com/Earth-Hominid/Memory-Game"
       fillColor="group-hover:fill-[#D3AF37]"
+      titleStyles="text-red-700"
     />
   );
 };

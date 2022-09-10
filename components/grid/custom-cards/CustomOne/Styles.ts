@@ -71,3 +71,10 @@ export const IconHolder = tw.div`
   w-6
   ml-2
 `;
+
+export const Wavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-blue-600
+`;
