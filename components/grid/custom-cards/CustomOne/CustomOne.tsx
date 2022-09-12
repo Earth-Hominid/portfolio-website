@@ -24,7 +24,7 @@ const CustomOne = () => {
   );
 
   return (
-    <CardContainer className="text-black bg-yellow-50 border-gray-400 border-[1px] shadow-xl">
+    <CardContainer className="text-black bg-yellow-50 border-gray-300 border-[1px] shadow-xl">
       <Image
         src={ProjectOne}
         alt="Learning platform image"
