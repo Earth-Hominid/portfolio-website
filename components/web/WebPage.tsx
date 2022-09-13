@@ -1,6 +1,6 @@
-import Hero from './hero/Hero';
-import TechnicalSection from './technical-section/TechnicalSection';
-import ProjectSection from './project-section/ProjectSection';
+import Hero from './medium/hero/Hero';
+import TechnicalSection from './medium/technical-section/TechnicalSection';
+import ProjectSection from './medium/project-section/ProjectSection';
 const WebPage = () => {
   return (
     <>
