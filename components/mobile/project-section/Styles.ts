@@ -5,6 +5,7 @@ export const MainSection = tw.section`
   flex-col
   w-full
   items-center
+  bg-gray-100
   md:hidden
 `;
 
@@ -12,7 +13,7 @@ export const SectionTitle = tw.h3`
   text-3xl
   text-black
   text-center
-  mb-5
+  my-5
 `;
 
 export const CardContainer = tw.div`

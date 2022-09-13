@@ -2,12 +2,14 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Layout } from '@/components/Layout';
 import Hero from '@/components/mobile/hero/Hero';
-import HeroSection from '@/components/web/hero/HeroSection';
+import HeroSection from '@/components/web/hero/Hero';
 import TechnicalSection from '@/components/mobile/technical-section/TechnicalSection';
-import WebTechnicalSection from '@/components/web/technical-section/WebTechnicalSection';
-import ProjectSection from '@/components/mobile/project-section/ProjectSection';
+import WebTechnicalSection from '@/components/web/technical-section/TechnicalSection';
+import WebProjectSection from '@/components/mobile/project-section/ProjectSection';
 import CarouselSection from '@/components/carousel-section/CarouselSection';
 import Grid from '@/components/grid/Grid';
+import MobilePage from '@/components/mobile/MobilePage';
+import WebPage from '@/components/web/WebPage';
 
 const Home: NextPage = () => {
   return (
@@ -25,12 +27,8 @@ const Home: NextPage = () => {
         styles="min-h-screen"
         width=""
       >
-        <Hero />
-        <HeroSection />
-        <TechnicalSection />
-        <WebTechnicalSection />
-        <ProjectSection />
-        <Grid />
+        <MobilePage />
+        <WebPage />
         <CarouselSection
           slides={[
             '/public/images/learning.png',

@@ -3,7 +3,6 @@ import tw from 'tailwind-styled-components';
 export const MainSection = tw.section`
   md:grid
   place-items-center
-  min-h-screen
   hidden
   bg-gray-100
 

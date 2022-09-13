@@ -1,5 +1,4 @@
 import Image from 'next/future/image';
-
 import BackgroundWave from '@/public/svgs/wave.svg';
 
 import {
@@ -14,7 +13,7 @@ import {
 } from './Styles';
 import Computer from '@/public/images/3d-computer.png';
 import Doll from '@/public/images/dall-doll.png';
-const WebTechnicalSection = () => {
+const TechnicalSection = () => {
   return (
     <MainContainer>
       <Spacer
@@ -65,4 +64,4 @@ const WebTechnicalSection = () => {
   );
 };
 
-export default WebTechnicalSection;
+export default TechnicalSection;

@@ -9,7 +9,7 @@ export const MainContainer = tw.section`
 `;
 
 export const VerticalSpace = tw.div`
-  pb-48
+  pb-24
 `;
 
 export const HorizontalContainer = tw.div`
