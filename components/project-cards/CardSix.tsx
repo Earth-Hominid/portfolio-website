@@ -12,7 +12,7 @@ import {
   ActionButtonHolder,
   IconHolder,
   WebsiteButton,
-  Wavy,
+  BlackWavy,
 } from './Styles';
 
 const CustomSix = () => {
@@ -35,8 +35,10 @@ const CustomSix = () => {
       <CardTitle className="text-black">Resume Builder</CardTitle>
 
       <CardDescription>
-        {`A modern React app offering users the ability to
-        create their own resume. Architected with switch-statements to construct a "stepping through process", this one page application has the feel of multiple pages.`}
+        A modern React app providing users the ability to create their own
+        resume. Architected with switch-statements to construct a{' '}
+        {`"stepping through process"`}, this one page application has the feel
+        of <BlackWavy>multiple</BlackWavy> pages.
       </CardDescription>
 
       <TechnologyDescription className="text-black">

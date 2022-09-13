@@ -11,7 +11,7 @@ import {
   ActionButtonHolder,
   IconHolder,
   WebsiteButton,
-  Wavy,
+  IndigoWavy,
 } from './Styles';
 
 const CustomFour = () => {
@@ -35,8 +35,8 @@ const CustomFour = () => {
 
       <CardDescription>
         With a discord inspired theme, clean UI, MVC architecture and data{' '}
-        <Wavy>validation</Wavy>, this ExpressJS Full Stack CRUD application
-        ensures you have full control of your inventory.
+        <IndigoWavy>validation</IndigoWavy>, this ExpressJS Full Stack CRUD
+        application ensures you have full control of your inventory.
       </CardDescription>
 
       <TechnologyDescription className="text-black">
