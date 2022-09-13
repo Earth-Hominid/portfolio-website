@@ -35,9 +35,8 @@ const CustomSix = () => {
       <CardTitle className="text-black">Resume Builder</CardTitle>
 
       <CardDescription>
-        {`A modern React web app offering users the ability to
-        create their own resume. Switch statements provide a "stepping through process",
-        creating the feeling of navigating multiple pages.`}
+        {`A modern React app offering users the ability to
+        create their own resume. Architected with switch-statements to construct a "stepping through process", this one page application has the feel of multiple pages.`}
       </CardDescription>
 
       <TechnologyDescription className="text-black">
