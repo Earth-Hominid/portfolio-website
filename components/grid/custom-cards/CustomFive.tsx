@@ -33,8 +33,8 @@ const CustomFive = () => {
       <CardTitle className="text-rose-700">Memory Card Game</CardTitle>
 
       <CardDescription>
-        A MARVEL themed, one page <Wavy>modern React</Wavy> web app, built with
-        Functional Components and Hooks.
+        A MARVEL themed, one page modern React web application, built with
+        Functional Components, React Hooks and simple state management.
       </CardDescription>
 
       <TechnologyDescription className="text-black">

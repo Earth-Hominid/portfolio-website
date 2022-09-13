@@ -34,9 +34,9 @@ const CustomFour = () => {
       </CardTitle>
 
       <CardDescription>
-        With a discord inspired theme, clean UI, <Wavy>MVC </Wavy>architecture
-        and data<Wavy> validation</Wavy>, this ExpressJS Full Stack CRUD
-        application ensures you have full control of your inventory.
+        With a discord inspired theme, clean UI, MVC architecture and data{' '}
+        <Wavy>validation</Wavy>, this ExpressJS Full Stack CRUD application
+        ensures you have full control of your inventory.
       </CardDescription>
 
       <TechnologyDescription className="text-black">
