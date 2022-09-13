@@ -23,14 +23,14 @@ const CustomFive = () => {
   );
 
   return (
-    <CardContainer className="bg-rose-100 border-[1px] shadow-xl border-gray-300">
+    <CardContainer className="rose-gradient border-[1px] shadow-xl border-gray-300">
       <Image
         src={ProjectFive}
         alt="Memory Card Game"
         priority={true}
         className="rounded-t-xl h-auto w-auto"
       />
-      <CardTitle className="text-black">Memory Card Game</CardTitle>
+      <CardTitle className="text-rose-700">Memory Card Game</CardTitle>
 
       <CardDescription>
         A MARVEL themed, one page <Wavy>modern React</Wavy> web app, built with

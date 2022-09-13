@@ -9,7 +9,7 @@ import {
 import CardOne from './custom-cards/CustomOne/CustomOne';
 import CardTwo from './custom-cards/CustomTwo/CustomTwo';
 import CardThree from './custom-cards/CustomThree/CustomThree';
-import CardFour from './grid-cards/CardFour';
+import CardFour from './custom-cards/CustomFour/CustomFour';
 import CardFive from './custom-cards/CustomFive/CustomFive';
 import CardSix from './grid-cards/CardSix';
 
