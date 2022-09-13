@@ -10,10 +10,11 @@ import { MainSection, SectionTitle, CardContainer } from './Styles';
 
 const ProjectSection = () => {
   return (
-    <MainSection>
+    <MainSection id="project_section">
       <SectionTitle>Featured Projects</SectionTitle>
       <CardContainer>
         <ProjectCard
+          id="1"
           title="Business Learning Platform"
           src={ProjectOne}
           technology="TypeScript | Node | PostgreSQL | NextJS |  StrapiJS Headless CMS"
@@ -26,6 +27,7 @@ const ProjectSection = () => {
           websiteAddress="https://rbsdocsfrontend.vercel.app/"
         />
         <ProjectCard
+          id="2"
           title="Blog Creator API"
           src={ProjectTwo}
           technology="Node | React | Express | MongoDB | 
@@ -39,6 +41,7 @@ const ProjectSection = () => {
           fillColor="group-hover:fill-white"
         />
         <ProjectCard
+          id="3"
           title="Chair Mart"
           src={ProjectThree}
           technology="React | React Router | Jest | Styled - Components"
@@ -51,40 +54,43 @@ const ProjectSection = () => {
           fillColor="group-hover:fill-black"
         />
         <ProjectCard
+          id="4"
           title="Seed Bank - Inventory Managment System"
           description="With a discord inspired theme, clean UI, MVC architecture and data validation, this ExpressJS Full Stack CRUD application ensures you have full control of your inventory."
           src={ProjectFour}
           technology="React | Express | MongoDB | Mongoose | PUG | TailwindCSS"
           textColor="text-stone-900"
           styles="bg-emerald-50"
-          buttonColor="bg-white hover:bg-emerald-300 hover:text-black"
+          buttonColor="bg-white hover:text-indigo-500"
           websiteAddress="https://pure-brushlands-30098.herokuapp.com/catalog"
           githubAddress="https://github.com/Earth-Hominid/Seeds-Inventory-Catalog"
-          fillColor="group-hover:fill-black"
+          fillColor="group-hover:fill-indigo-500"
         />
         <ProjectCard
+          id="5"
           title="Memory Card Game"
           description="A MARVEL themed, one page modern React web app, built with Functional Components and Hooks."
           src={ProjectFive}
           technology="React | CSS3"
           textColor=""
           styles="bg-blue-100"
-          buttonColor="bg-white hover:bg-slate-300 hover:text-black"
+          buttonColor="bg-white hover:bg-[#16181D] hover:text-[#D3AF37]"
           websiteAddress="https://earth-hominid.github.io/Memory-Game/"
           githubAddress="https://github.com/Earth-Hominid/Memory-Game"
-          fillColor="group-hover:fill-black"
+          fillColor="group-hover:fill-[#D3AF37]"
         />
         <ProjectCard
+          id="6"
           title="Resume Builder"
           description="A modern one page web application providing users the ability to produce and format their own resume."
           src={ProjectSix}
           technology="React | CSS3"
           textColor=""
           styles="bg-indigo-100"
-          buttonColor="bg-white hover:bg-[#02BD9D] hover:text-black"
+          buttonColor="bg-white hover:bg-[#02BD9D] hover:text-white"
           websiteAddress="https://earth-hominid.github.io/Resume-Builder-2.0/"
           githubAddress="https://github.com/Earth-Hominid/Resume-Builder-2.0"
-          fillColor="group-hover:fill-black"
+          fillColor="group-hover:fill-white"
         />
       </CardContainer>
     </MainSection>

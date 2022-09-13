@@ -30,7 +30,7 @@ const CustomFive = () => {
         priority={true}
         className="rounded-t-xl h-auto w-auto"
       />
-      <CardTitle className="text-rose-700">Memory Card Game</CardTitle>
+      <CardTitle className="text-rose-600">Memory Card Game</CardTitle>
 
       <CardDescription>
         A MARVEL themed, one page modern React web application, built with

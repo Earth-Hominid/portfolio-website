@@ -6,12 +6,12 @@ import {
   TextContainer,
 } from './Styles';
 
-import CardOne from './custom-cards/CustomOne';
-import CardTwo from './custom-cards/CustomTwo';
-import CardThree from './custom-cards/CustomThree';
-import CardFour from './custom-cards/CustomFour';
-import CardFive from './custom-cards/CustomFive';
-import CardSix from './custom-cards/CustomSix';
+import CardOne from '../project-cards/CardOne';
+import CardTwo from '../project-cards/CardTwo';
+import CardThree from '../project-cards/CardThree';
+import CardFour from '../project-cards/CardFour';
+import CardFive from '../project-cards/CardFive';
+import CardSix from '../project-cards/CardSix';
 
 const Grid = () => {
   return (
