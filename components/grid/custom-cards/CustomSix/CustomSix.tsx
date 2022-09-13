@@ -2,6 +2,8 @@ import Image from 'next/future/image';
 import Link from 'next/link';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 
+import ProjectSix from '@/public/images/resume-builder.png';
+
 import {
   CardContainer,
   CardTitle,
@@ -23,22 +25,27 @@ const CustomSix = () => {
   );
 
   return (
-    <CardContainer className="">
+    <CardContainer className="green-gradient border-[1px] shadow-xl border-gray-300">
       <Image
-        src={ProjectFour}
+        src={ProjectSix}
         alt=""
         priority={true}
         className="rounded-t-xl h-auto w-auto"
       />
-      <CardTitle className="text-black">Business Learning Platform</CardTitle>
+      <CardTitle className="text-black">Resume Builder</CardTitle>
 
-      <CardDescription></CardDescription>
+      <CardDescription>
+        A modern one page web application providing users the ability to produce
+        and format their own resume.
+      </CardDescription>
 
-      <TechnologyDescription className="text-black"></TechnologyDescription>
+      <TechnologyDescription className="text-black">
+        React | CSS3
+      </TechnologyDescription>
       <ActionButtonHolder>
-        <Link href="">
+        <Link href="https://earth-hominid.github.io/Resume-Builder-2.0/">
           <a target="_blank">
-            <WebsiteButton className="">
+            <WebsiteButton className="bg-white hover:bg-[#02BD9D] hover:text-white">
               Website
               <IconHolder>
                 <ComputerDesktopIcon />
@@ -46,9 +53,9 @@ const CustomSix = () => {
             </WebsiteButton>
           </a>
         </Link>
-        <Link href="">
+        <Link href="https://github.com/Earth-Hominid/Resume-Builder-2.0">
           <a target="_blank">
-            <WebsiteButton className="">
+            <WebsiteButton className="bg-white hover:bg-[#02BD9D] hover:text-white">
               Code
               {GithubIcon}
             </WebsiteButton>

@@ -11,7 +11,7 @@ import CardTwo from './custom-cards/CustomTwo/CustomTwo';
 import CardThree from './custom-cards/CustomThree/CustomThree';
 import CardFour from './custom-cards/CustomFour/CustomFour';
 import CardFive from './custom-cards/CustomFive/CustomFive';
-import CardSix from './grid-cards/CardSix';
+import CardSix from './custom-cards/CustomSix/CustomSix';
 
 const Grid = () => {
   return (
