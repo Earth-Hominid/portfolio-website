@@ -10,7 +10,7 @@ import {
   ActionButtonHolder,
   IconHolder,
   WebsiteButton,
-  Wavy,
+  RoseWavy,
 } from './Styles';
 
 const CustomFive = () => {
@@ -34,7 +34,8 @@ const CustomFive = () => {
 
       <CardDescription>
         A MARVEL themed, one page modern React web application, built with
-        Functional Components, React Hooks and simple state management.
+        Functional Components, <RoseWavy>React Hooks</RoseWavy> and simple state
+        management.
       </CardDescription>
 
       <TechnologyDescription className="text-black">

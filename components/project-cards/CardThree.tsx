@@ -11,7 +11,7 @@ import {
   ActionButtonHolder,
   IconHolder,
   WebsiteButton,
-  Wavy,
+  OrangeWavy,
 } from './Styles';
 
 const CustomThree = () => {
@@ -31,12 +31,12 @@ const CustomThree = () => {
         priority={true}
         className="rounded-t-xl h-auto w-auto"
       />
-      <CardTitle>Chair Mart</CardTitle>
+      <CardTitle className="text-[#ff7b54]">Chair Mart</CardTitle>
 
       <CardDescription>
         An E-commerce Furniture Store mock-up with shopping cart. Built with{' '}
-        <Wavy>modern</Wavy> React, Functional Components with Hooks. Simple
-        State management with Context API.
+        <OrangeWavy>modern</OrangeWavy> React, Functional Components with Hooks.
+        Simple State management with Context API.
       </CardDescription>
 
       <TechnologyDescription className="text-black">

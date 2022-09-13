@@ -11,7 +11,7 @@ import {
   ActionButtonHolder,
   IconHolder,
   WebsiteButton,
-  Wavy,
+  IndigoWavy,
 } from './Styles';
 
 const CustomTwo = () => {
@@ -35,20 +35,20 @@ const CustomTwo = () => {
   );
 
   return (
-    <CardContainer className="text-black bg-gray-100 border-gray-300 border-[1px] shadow-xl">
+    <CardContainer className="text-black bg-indigo-50 border-gray-300 border-[1px] shadow-xl">
       <Image
         src={ProjectTwo}
         alt="Project Two"
         priority={true}
         className="rounded-t-xl h-auto w-auto"
       />
-      <CardTitle className="text-indigo-500">Blog Creator API</CardTitle>
+      <CardTitle className="text-indigo-600">Blog Creator API</CardTitle>
 
       <CardDescription>
         Designed with Model-View-Controller architecture along with the
         blazingly fast RESTful API methodology. Online users can signup for an
-        account. Once <Wavy>authenticated</Wavy>, they can create, save, edit
-        and view blog entries.
+        account. Once <IndigoWavy>authenticated</IndigoWavy>, they can create,
+        save, edit and view blog entries.
       </CardDescription>
 
       <TechnologyDescription className="text-black">

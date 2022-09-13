@@ -78,3 +78,31 @@ export const Wavy = tw.span`
   decoration-wavy
   decoration-blue-600
 `;
+
+export const IndigoWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-indigo-600
+`;
+
+export const OrangeWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-[#ff7b54]
+`;
+
+export const RoseWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-rose-600
+`;
+
+export const BlackWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-black
+`;
