@@ -8,9 +8,9 @@ import {
 
 import CardOne from './custom-cards/CustomOne/CustomOne';
 import CardTwo from './custom-cards/CustomTwo/CustomTwo';
-import CardThree from './custom-cards/CustomThree/CustomeThree';
+import CardThree from './custom-cards/CustomThree/CustomThree';
 import CardFour from './grid-cards/CardFour';
-import CardFive from './grid-cards/CardFive';
+import CardFive from './custom-cards/CustomFive/CustomFive';
 import CardSix from './grid-cards/CardSix';
 
 const Grid = () => {

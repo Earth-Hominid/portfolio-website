@@ -1,8 +1,7 @@
 import Image from 'next/future/image';
 import Link from 'next/link';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
-import ProjectFour from '@/public/images/learning.png';
-
+import ProjectFive from '@/public/images/memory.png';
 import {
   CardContainer,
   CardTitle,
@@ -24,22 +23,27 @@ const CustomFive = () => {
   );
 
   return (
-    <CardContainer className="">
+    <CardContainer className="bg-rose-200 border-[1px] shadow-xl border-gray-300">
       <Image
-        src={ProjectFour}
-        alt=""
+        src={ProjectFive}
+        alt="Memory Card Game"
         priority={true}
         className="rounded-t-xl h-auto w-auto"
       />
-      <CardTitle className="text-black">Business Learning Platform</CardTitle>
+      <CardTitle className="text-black">Memory Card Game</CardTitle>
 
-      <CardDescription></CardDescription>
+      <CardDescription>
+        A MARVEL themed, one page <Wavy>modern React</Wavy> web app, built with
+        Functional Components and Hooks.
+      </CardDescription>
 
-      <TechnologyDescription className="text-black"></TechnologyDescription>
+      <TechnologyDescription className="text-black">
+        React | CSS3
+      </TechnologyDescription>
       <ActionButtonHolder>
-        <Link href="">
+        <Link href="https://earth-hominid.github.io/Memory-Game/">
           <a target="_blank">
-            <WebsiteButton className="">
+            <WebsiteButton className="bg-white hover:bg-[#16181D] hover:text-[#D3AF37]">
               Website
               <IconHolder>
                 <ComputerDesktopIcon />
@@ -47,9 +51,9 @@ const CustomFive = () => {
             </WebsiteButton>
           </a>
         </Link>
-        <Link href="">
+        <Link href="https://github.com/Earth-Hominid/Memory-Game">
           <a target="_blank">
-            <WebsiteButton className="">
+            <WebsiteButton className="bg-white hover:bg-[#16181D] hover:text-[#D3AF37]">
               Code
               {GithubIcon}
             </WebsiteButton>

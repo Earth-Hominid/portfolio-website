@@ -77,5 +77,5 @@ export const Wavy = tw.span`
   underline
   underline-offset-4
   decoration-wavy
-  decoration-[#ff7b54]
+  decoration-rose-700
 `;
