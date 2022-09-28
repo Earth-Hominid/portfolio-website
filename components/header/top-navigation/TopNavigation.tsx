@@ -80,7 +80,7 @@ function TopNavigation({
               href="#projects"
               className="hover:text-blue-600 cursor-pointer"
             >
-              My Work
+              <div className="hover:text-blue-600 cursor-pointer">My Work</div>
             </Link>
           </li>
           <li>
@@ -88,7 +88,7 @@ function TopNavigation({
               href="#contact"
               className="cursor-pointer hover:text-blue-600"
             >
-              Contact
+              <div className="hover:text-blue-600 cursor-pointer">Contact</div>
             </Link>
           </li>
         </ul>
