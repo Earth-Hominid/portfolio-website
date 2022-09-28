@@ -3,10 +3,7 @@ import { motion } from 'framer-motion';
 
 import {
   WebContainer,
-  WebTitle,
-  WebDescription,
   WebHorizontalContainer,
-  ImageHolder,
   TextHolder,
   CardTitle,
   CardText,
