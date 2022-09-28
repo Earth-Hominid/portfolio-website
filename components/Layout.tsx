@@ -7,6 +7,7 @@ import Hero from './hero/Hero';
 import Technical from './technical/Technical';
 import Projects from './projects/Projects';
 import Contact from './contact/Contact';
+import Footer from './footer/Footer';
 
 const Layout = () => {
   return (
@@ -43,16 +44,18 @@ const Layout = () => {
       </section>
 
       <Link href="#header">
-        <footer className="sticky bottom-5 w-full flex items-center justify-center">
+        <div className="sticky bottom-5 w-full flex items-center justify-center">
           <Image
             src={Doll}
             alt="3D render of Chris Doll"
             className="h-10 w-10 rounded-full grayscale hover:grayscale-0 cursor-pointer"
           />
-        </footer>
+        </div>
       </Link>
 
-      {/* Footer */}
+      <section id="footer" className="snap-start scroll-smooth">
+        <Footer />
+      </section>
     </div>
   );
 };

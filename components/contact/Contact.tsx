@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import CallToAction from '../call-to-action/CallToAction';
 
 import {

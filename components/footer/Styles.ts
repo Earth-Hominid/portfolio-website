@@ -32,6 +32,11 @@ export const LinkContainer = tw.div`
 export const LinkText = tw.p`
   text-gray-600
   px-2
+  cursor-pointer
+  hover:underline
+  decoration-wavy
+  decoration-blue-600
+  hover:underline-offset-4
 `;
 
 export const BorderContainer = tw.div`

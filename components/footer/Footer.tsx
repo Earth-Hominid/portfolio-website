@@ -22,27 +22,35 @@ const Footer = () => {
         <FooterText>Chris Doll</FooterText>
         <LinkContainer>
           <BorderContainer>
-            <LinkText>My Work</LinkText>
+            <Link href="#projects">
+              <LinkText>My Work</LinkText>
+            </Link>
           </BorderContainer>
           <BorderContainer>
-            <LinkText>Software Development</LinkText>
+            <Link href="#technical">
+              <LinkText>Software Development</LinkText>
+            </Link>
           </BorderContainer>
-          <LinkText>Work With Me</LinkText>
+          <Link href="#contact">
+            <LinkText>Work With Me</LinkText>
+          </Link>
         </LinkContainer>
         <BrandIconContainer>
-          <Link href={'https://github.com/Earth-Hominid'}>
-            <a>
-              <IconHolder>
-                <Image
-                  src={GithubLogo}
-                  alt="github logo"
-                  layout="fill"
-                  objectFit="contain"
-                  priority={true}
-                />
-              </IconHolder>
-            </a>
-          </Link>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={'https://github.com/Earth-Hominid'}
+          >
+            <IconHolder>
+              <Image
+                src={GithubLogo}
+                alt="github logo"
+                layout="fill"
+                objectFit="contain"
+                priority={true}
+              />
+            </IconHolder>
+          </a>
         </BrandIconContainer>
       </MainContainer>
     </FooterContainerSmall>
