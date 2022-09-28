@@ -27,7 +27,7 @@ export const TechIconContainer = tw.div`
 
 export const CardDescription = tw.p`
   text-gray-700
-  font-montserrat
+  font-rubik
   text-center
   text-sm
   md:text-base

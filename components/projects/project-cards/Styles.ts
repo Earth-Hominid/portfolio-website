@@ -36,7 +36,8 @@ export const TechIconContainer = tw.div`
 
 export const Description = tw.p`
 text-gray-800
-  font-montserrat
+  font-rubik
+  text-sm
   mx-auto
   text-center
   leading-relaxed
