@@ -10,6 +10,7 @@ module.exports = {
   experimental: {
     images: {
       allowFutureImage: true,
+      formats: ['image/avif', 'image/webp'],
     },
   },
 };

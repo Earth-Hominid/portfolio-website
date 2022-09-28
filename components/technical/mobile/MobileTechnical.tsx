@@ -1,0 +1,60 @@
+import Image from 'next/future/image';
+import { motion } from 'framer-motion';
+import MobileTechnicalCard from '../../cards/MobileTechnicalCard';
+import WebTechnicalCard from '@/components/cards/WebTechnicalCard';
+
+import Computer from '@/public/images/3d-computer.png';
+import Doll from '@/public/images/dall-doll.png';
+
+import { MainContainer } from './Styles';
+
+type Props = {};
+
+const Technical = (props: Props) => {
+  return (
+    <MainContainer>
+      <MobileTechnicalCard
+        title="Software Development"
+        description="I build rich web products in collaboration with clients. I use the
+            latest technology, creating blazingly fast API's with coding best
+            practices."
+        src={Computer}
+        priority={true}
+        alt="3D render of computer"
+        styles="
+                rounded-full 
+                object-contain 
+                w-40
+                h-auto 
+                shadow-2xl"
+        initial={{ x: -200, y: 200 }}
+        transition={{ duration: 1.2 }}
+        viewport={{ once: true }}
+        whileInView={{ y: 0, x: 0 }}
+        divstyle=""
+        color="decoration-blue-600"
+      />
+      <MobileTechnicalCard
+        title="Product Design"
+        description="I create products that are easy to use, look beautiful, and achieve your business goals."
+        src={Doll}
+        priority={true}
+        alt="3D image of office worker"
+        styles="
+                rounded-full 
+                object-contain 
+                w-40
+                h-auto 
+                shadow-2xl"
+        initial={{ x: 200, y: 200 }}
+        transition={{ duration: 1.2 }}
+        viewport={{ once: true }}
+        whileInView={{ y: 0, x: 0 }}
+        divstyle=""
+        color="decoration-indigo-600"
+      />
+    </MainContainer>
+  );
+};
+
+export default Technical;
