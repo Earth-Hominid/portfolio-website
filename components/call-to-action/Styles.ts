@@ -2,8 +2,8 @@ import tw from 'tailwind-styled-components';
 
 export const CallToActionButton = tw.button`
   bg-white
-  py-4
-  px-6
+  py-5
+  px-10
   rounded-lg
   hover:shadow-lg
   font-rubik
@@ -30,7 +30,6 @@ export const AbsoluteContainer = tw.div`
   transition
   group-hover:duration-300
   duration-1000
-  
 `;
 
 export const ActionButtonSecondSpan = tw.span`

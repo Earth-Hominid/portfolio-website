@@ -19,6 +19,13 @@
   .square {
     aspect-ratio: 1 / 1;
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 .dashboard-polka {
@@ -235,4 +242,29 @@
       transparent 100%
     ),
     linear-gradient(135deg, rgb(167, 243, 208), rgb(236, 253, 245));
+}
+
+.dashboard-dark {
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 10px,
+      transparent 10px,
+      transparent 11px
+    ),
+    repeating-linear-gradient(
+      22.5deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 10px,
+      transparent 10px,
+      transparent 11px
+    ),
+    linear-gradient(
+      90deg,
+      rgb(14, 165, 233),
+      rgb(99, 102, 241),
+      rgb(244, 63, 94),
+      rgb(254, 252, 232),
+      rgb(16, 185, 129)
+    );
 }
