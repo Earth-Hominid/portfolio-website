@@ -11,9 +11,13 @@ function BottomNavigation({
     <BottomNavigationMenu>
       <ActionButtonHolder>
         <Link href="#projects">
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => toggleNavigationButton()}
+          >
             <LinkText>My Work</LinkText>
-          </motion.div>
+          </motion.button>
         </Link>
       </ActionButtonHolder>
       <ActionButtonHolder>
@@ -21,8 +25,7 @@ function BottomNavigation({
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="hover:text-blue-600 cursor-pointer"
-            onClick={toggleNavigationButton}
+            onClick={() => toggleNavigationButton()}
           >
             <LinkText> Contact</LinkText>
           </motion.button>
