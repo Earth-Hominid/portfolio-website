@@ -40,7 +40,7 @@ const CardThree = (props: Props) => {
   return (
     <>
       {darkMode ? (
-        <CardArticle className="bg-[#36393F]">
+        <CardArticle className="bg-[#121212]">
           <motion.div
             initial={{ y: -100, opacity: 0 }}
             transition={{ duration: 1.2 }}

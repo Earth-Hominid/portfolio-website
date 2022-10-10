@@ -4,9 +4,7 @@ import { motion } from 'framer-motion';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import { useContext } from 'react';
 import ThemeContext from '@/context/darkModeContext';
-
 import ProjectOne from '@/public/images/projects/project-one.png';
-
 // Icons
 import NodeIcon from '@/public/svgs/icons/node-icon.svg';
 import NextIconDark from '@/public/svgs/icons/next-icon-dark.svg';
@@ -29,9 +27,7 @@ import {
   DarkBlueWavy,
 } from './Styles';
 
-type Props = {};
-
-const CardOne = ({ props: Props }) => {
+const CardOne = () => {
   const { darkMode } = useContext(ThemeContext);
 
   const GithubIcon = (
@@ -43,7 +39,7 @@ const CardOne = ({ props: Props }) => {
   );
 
   return (
-    <CardArticle className="bg-yellow-50 dark:bg-[#1A1A1B]">
+    <CardArticle className="bg-yellow-50 dark:bg-[#121212]">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}

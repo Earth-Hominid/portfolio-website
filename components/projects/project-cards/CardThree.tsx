@@ -38,7 +38,7 @@ const CardFour = (props: Props) => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <CardArticle className="bg-[#FFF7F0] dark:bg-[#303030]">
+    <CardArticle className="bg-[#FFF7F0] dark:bg-[#121212]">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}

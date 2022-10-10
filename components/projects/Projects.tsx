@@ -1,6 +1,5 @@
 import Grid from './grid/Grid';
 import React, { useState } from 'react';
-import Image from 'next/future/image';
 import { motion } from 'framer-motion';
 
 import CardOne from './project-cards/CardOne';
@@ -29,7 +28,6 @@ const Projects = (props: Props) => {
           <CardSix />
         </Container>
       </CardContainer>
-      <Grid />
     </>
   );
 };

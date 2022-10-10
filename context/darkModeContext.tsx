@@ -1,5 +1,10 @@
 import { createContext, useState, useMemo } from 'react';
-import { DarkMode, ThemeContextType, HandleChangeTheme } from '../@types/theme';
+import {
+  DarkMode,
+  DarkModeValue,
+  ThemeContextType,
+  HandleChangeTheme,
+} from '../@types/theme';
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
 
@@ -7,7 +12,7 @@ export const ThemeProvider: React.FC<React.ReactNode> = ({ children }) => {
   const [darkMode, setDarkMode] = useState<DarkMode>(false);
 
   const toggleTheme = () => {
-    setDarkMode((prevValue: boolean) => !prevValue);
+    setDarkMode((prevValue: DarkMode) => !prevValue);
   };
 
   const handleToggleThemeClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -15,7 +20,7 @@ export const ThemeProvider: React.FC<React.ReactNode> = ({ children }) => {
     toggleTheme();
   };
 
-  const darkModeValue = useMemo(() => {
+  const darkModeValue = useMemo<DarkModeValue>(() => {
     return [darkMode, setDarkMode];
   }, [darkMode, setDarkMode]);
 

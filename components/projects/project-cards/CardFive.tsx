@@ -48,7 +48,7 @@ const CardFive = (props: Props) => {
   return (
     <>
       {darkMode ? (
-        <CardArticle className="bg-[#23272f]">
+        <CardArticle className="bg-[#121212]">
           <motion.div
             initial={{ y: -100, opacity: 0 }}
             transition={{ duration: 1.2 }}

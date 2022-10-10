@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/future/image';
 import { useState, useContext } from 'react';
-import ThemeContext from '@/context/darkModeContext';
+import darkModeContext from '@/context/darkModeContext';
 import Doll from '@/public/images/dall-doll.png';
 import Header from './header/Header';
 import Hero from './hero/Hero';
@@ -12,7 +12,7 @@ import Contact from './contact/Contact';
 import Footer from './footer/Footer';
 
 const Layout = () => {
-  const { darkMode, handleToggleThemeClick } = useContext(ThemeContext);
+  const { darkMode, handleToggleThemeClick } = useContext(darkModeContext);
 
   return (
     <div className={`${darkMode ? 'dark' : ''}`}>
