@@ -66,10 +66,10 @@ function TopNavigation({
           }}
         >
           <IconContainer>
-            <a href="#">
+            <a href="#projects">
               <LinkText className="hidden md:flex">My Work</LinkText>
             </a>
-            <a href="#">
+            <a href="#contact">
               <LinkText className="hidden md:flex">Get in touch</LinkText>
             </a>
             <RelativeContainer>
