@@ -2,7 +2,7 @@ import Image from 'next/future/image';
 import Link from 'next/link';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
-import ProjectThree from '@/public/images/chair.png';
+import ProjectThree from '@/public/images/projects/project-three.png';
 
 // Icons
 import ReactLogo from '@/public/svgs/icons/react.svg';

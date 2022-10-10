@@ -1,28 +1,40 @@
-import BackgroundWave from '@/public/svgs/wave.svg';
+import React from 'react';
 import MobileTechnical from './mobile/MobileTechnical';
 import WebTechnical from './web/WebTechnical';
-
-import { BackgroundContainer, VerticalSpace, Spacer } from './Styles';
+import LightWave from '@/public/svgs/technical-wave-light.svg';
+import DarkWave from '@/public/svgs/technical-wave-dark.svg';
+import { MainContainer, Spacer } from './Styles';
 
 type Props = {};
 
-function Technical({}: Props) {
+const Technical = ({ darkMode }: { darkMode: boolean | undefined }) => {
   return (
-    <BackgroundContainer>
-      <Spacer
-        style={{
-          backgroundImage: `url(${BackgroundWave.src})`,
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        <VerticalSpace>
+    <MainContainer>
+      {darkMode ? (
+        <Spacer
+          style={{
+            backgroundImage: `url(${DarkWave.src})`,
+            width: '100%',
+            height: '100%',
+          }}
+        >
           <MobileTechnical />
           <WebTechnical />
-        </VerticalSpace>
-      </Spacer>
-    </BackgroundContainer>
+        </Spacer>
+      ) : (
+        <Spacer
+          style={{
+            backgroundImage: `url(${LightWave.src})`,
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <MobileTechnical />
+          <WebTechnical />
+        </Spacer>
+      )}
+    </MainContainer>
   );
-}
+};
 
 export default Technical;

@@ -1,41 +1,40 @@
 import tw from 'tailwind-styled-components';
 
 export const CardContainer = tw.div`
+   z-0 
   h-screen
- flex 
- relative 
- overflow-hidden 
- flex-col 
- max-w-full 
- px-10 
- justify-evenly 
- mx-auto 
- items-center 
- z-0 
- bg-gray-100
- md:hidden
-`;
-
-export const SectionTitle = tw.h3`
-  absolute
-  top-2
-  text-3xl
-  font-poppins
-  text-black
-  p-5
-  text-center
-  tracking-wide
-`;
-
-export const InsideContainer = tw.div`
-  flex
+  min-h-[850px]
   w-full
+  flex 
+  flex-col 
+  overflow-hidden 
+  max-w-full
+  justify-evenly 
+  mx-auto 
+  items-center 
+  bg-gray-100
+  dark:bg-[#1D2433]
+
+`;
+
+export const Title = tw.h3`
+   text-4xl
+  leading-snug
+  tracking-wide
+  font-rubik
+  text-center
+  sm:text-5xl
+  py-10
+  text-black
+  dark:text-gray-200
+`;
+
+export const Container = tw.div`
+  flex
+  max-w-full
   overflow-x-scroll 
   overflow-y-hidden
-  snap-x
-  snap-mandatory
-  mt-10
-  md:mt-32
-  space-x-5 
-  p-10
+  space-x-10
+  px-10
+  pb-10
 `;

@@ -1,13 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme');
 
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+
+const nextConfig = {
+  darkMode: 'class',
   content: [
+    './src/**/*.{js,jsx,ts,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './public/**/*.{js,ts,jsx,tsx}',
+    './hooks/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    typography: (theme) => ({}),
     screens: {
       xs: '540px',
       ...defaultTheme.screens,
@@ -27,6 +35,7 @@ module.exports = {
         rubik: ['Rubik', 'sans-serif'],
         rubikmaze: ['Rubik Maze', 'cursive'],
         tinos: ['Tinos', 'serif'],
+        cormorant: ['Cormorant', 'serif'],
       },
       backgroundImage: {
         'layer-one': "url('./public/svgs/layer1.svg')",
@@ -39,8 +48,9 @@ module.exports = {
       fontFamily: ['hover', 'focus'],
     },
   },
-  plugins: [],
   corePlugins: {
     fontFamily: true,
   },
 };
+
+module.exports = nextConfig;

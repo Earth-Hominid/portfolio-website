@@ -9,14 +9,16 @@ export const MainContainer = tw.div`
 `;
 
 export const SectionTitle = tw.h3`
-  text-3xl
-  font-poppins
+  text-4xl
+  dark:text-gray-200
+  font-rubik
   font-bold
+  tracking-wide
   mt-16
 `;
 
 export const FormContainer = tw.div`
-  container
+  w-full
   max-w-2xl
   px-5
   mx-auto
@@ -24,7 +26,7 @@ export const FormContainer = tw.div`
 `;
 
 export const StyledForm = tw.form`
-mt-10
+  mt-10
   py-2
   px-5
   md:py-5
@@ -33,8 +35,10 @@ mt-10
   flex-col
   justify-center
   bg-white
+  dark:bg-[#16181D]
   border
-  border-gray-300 
+  border-gray-300
+  dark:border-black
   shadow-xl
   rounded-lg
 `;
@@ -52,6 +56,8 @@ export const StyledInput = tw.input`
   h-12
   peer
   border-b-2
+  dark:bg-[#16181D]
+  dark:text-gray-200
   border-gray-200 
   border-dashed
   focus:outline-none 
@@ -66,8 +72,10 @@ export const WideTextArea = tw.textarea`
   p-2.5 
   w-full 
   text-sm 
-  text-gray-900 
+  text-gray-900
+  dark:text-gray-200
   bg-gray-50
+  dark:bg-[#16181D]
   rounded-lg 
   border
   border-dashed 
@@ -78,20 +86,22 @@ export const WideTextArea = tw.textarea`
 `;
 
 export const StyledLabel = tw.label`
-text-stone-800 
+text-stone-200
+dark:text-stone-200
   absolute 
-  left-0  
+  left-0
   -top-3.5 
   text-sm
   md:text-base
-  peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-600 peer-placeholder-shown:top-2 transition-all 
+  peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-200 peer-placeholder-shown:top-2 
+  transition-all 
   peer-focus:-top-3.5
   peer-foucs:text-stone-600
   peer-focus:text-sm
 `;
 
 export const TextAreaLabel = tw.label`
-  text-stone-600
+  text-stone-200
   pt-6 
   pb-3
 `;

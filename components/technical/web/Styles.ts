@@ -1,15 +1,13 @@
 import tw from 'tailwind-styled-components';
 
-export const MainContainer = tw.section`
+export const MainContainer = tw.div`
   hidden
   md:flex
-  w-full
   flex-col
-  text-center 
-  max-w-7xl 
-  px-10 
-  justify-evenly 
-  mx-auto 
+  justify-center
   items-center
-  space-y-8
+  space-y-28
+  mt-32
+  mx-10
+  lg:mx-auto
 `;

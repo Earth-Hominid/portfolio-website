@@ -1,23 +1,31 @@
 import Link from 'next/link';
-import { BottomNavigationMenu, ActionButtonHolder, ActionLink } from './Styles';
+import { motion } from 'framer-motion';
+import { BottomNavigationMenu, ActionButtonHolder, LinkText } from './Styles';
 
 function BottomNavigation({
-  handleNavigationMenuClick,
-  navigationMenuToggle,
+  toggleNavigationButton,
 }: {
-  handleNavigationMenuClick: Function;
-  navigationMenuToggle: boolean;
+  toggleNavigationButton: Function;
 }) {
   return (
     <BottomNavigationMenu>
       <ActionButtonHolder>
         <Link href="#projects">
-          <div className="hover:text-blue-600 cursor-pointer">My Work</div>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <LinkText>My Work</LinkText>
+          </motion.div>
         </Link>
       </ActionButtonHolder>
       <ActionButtonHolder>
         <Link href="#contact">
-          <div className="hover:text-blue-600 cursor-pointer">Contact</div>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="hover:text-blue-600 cursor-pointer"
+            onClick={toggleNavigationButton}
+          >
+            <LinkText> Contact</LinkText>
+          </motion.button>
         </Link>
       </ActionButtonHolder>
     </BottomNavigationMenu>

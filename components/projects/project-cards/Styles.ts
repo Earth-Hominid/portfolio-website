@@ -3,17 +3,18 @@ import tw from 'tailwind-styled-components';
 export const CardArticle = tw.div`
   flex 
   flex-col 
-  rounded-xl 
   items-center 
   flex-shrink-0 
   h-auto 
   max-w-sm
-  border-[1px] 
-  border-gray-300 
+  border
+  border-gray-300
+  dark:border-gray-900
   shadow-xl  
   snap-center
   overflow-hidden
   space-y-6
+  rounded-lg
 `;
 
 export const Title = tw.h3`
@@ -67,11 +68,32 @@ export const Wavy = tw.span`
   decoration-blue-600
 `;
 
+export const DarkBlueWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-[#4FBCFF]
+`;
+
+export const DarkGreenWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-[#00B3A6]
+`;
+
 export const IndigoWavy = tw.span`
   underline
   underline-offset-4
   decoration-wavy
   decoration-indigo-600
+`;
+
+export const DarkIndigoWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-[#BB86FC]
 `;
 
 export const OrangeWavy = tw.span`
@@ -105,7 +127,7 @@ export const WebsiteButton = tw.button`
   bg-white
   shadow-md
   transition
-  duration-500
+  duration-300
   group
 `;
 

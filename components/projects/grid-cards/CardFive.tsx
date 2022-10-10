@@ -1,7 +1,7 @@
 import Image from 'next/future/image';
 import Link from 'next/link';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
-import ProjectFive from '@/public/images/memory.png';
+import ProjectFive from '@/public/images/projects/project-five.png';
 import { motion } from 'framer-motion';
 
 // Icons

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 
-import ProjectSix from '@/public/images/resume-builder.png';
+import ProjectSix from '@/public/images/projects/project-six.png';
 
 // Icons
 import ReactLogo from '@/public/svgs/icons/react.svg';
