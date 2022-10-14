@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useState } from 'react';
 import Image from 'next/future/image';
-import { useState, useContext } from 'react';
-import darkModeContext from '@/context/dark-context';
+import { useContext } from 'react';
 import Doll from '@/public/images/dall-doll.png';
 import Header from './header/Header';
 import Hero from './hero/Hero';
@@ -11,6 +11,7 @@ import Projects from './projects/Projects';
 import Contact from './contact/Contact';
 import Footer from './footer/Footer';
 import { DarkContext } from '@/context/dark-context';
+import { useEffect } from 'react';
 
 const Layout = () => {
   const { darkMode, handleToggleThemeClick } = useContext(DarkContext);

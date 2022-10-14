@@ -1,11 +1,9 @@
 import { createContext, useState, useEffect } from 'react';
 
-interface DarkModeContextType {
-  darkMode: boolean | null;
-  handleToggleThemeClick: Function;
+interface DarkModeInterface {
+  darkMode?: boolean | null;
+  handleToggleThemeClick?: Function;
 }
-
-type DarkModeType = boolean;
 
 type ThemeProps = { children: React.ReactNode };
 
@@ -13,10 +11,15 @@ const theme = {
   darkMode: true || false,
 };
 
-export const DarkContext = createContext<DarkModeContextType | null>(null);
+const initialState = {
+  darkMode: false,
+  handleToggleThemeClick: (event: React.MouseEvent<HTMLElement>) => {},
+};
+
+export const DarkContext = createContext(initialState);
 
 export const DarkProvider = ({ children }: ThemeProps) => {
-  const [darkMode, setDarkMode] = useState<DarkModeType | null>(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   // check and reset theme when `darkMode` changes
   useEffect(() => {
