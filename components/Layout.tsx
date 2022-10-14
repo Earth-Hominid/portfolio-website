@@ -55,7 +55,7 @@ const Layout = () => {
         </section>
 
         <Link href="#header">
-          <div className="sticky bottom-0 w-full flex items-center justify-center pt-5 ">
+          <div className="sticky bottom-5 w-full flex items-center justify-center pt-5 ">
             <Image
               src={Doll}
               alt="3D render of Chris Doll"
