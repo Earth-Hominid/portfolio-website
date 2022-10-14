@@ -31,7 +31,7 @@ const Layout = () => {
       </Head>
 
       <div className="dark:bg-[#16181D]">
-        <header>
+        <header id="header">
           <Header
             handleToggleThemeClick={handleToggleThemeClick}
             darkMode={darkMode}
