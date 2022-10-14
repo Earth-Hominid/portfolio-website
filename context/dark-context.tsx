@@ -4,6 +4,7 @@ interface DarkModeContextType {
   darkMode: boolean | null;
   handleToggleThemeClick: Function;
 }
+
 type DarkModeType = boolean;
 
 type ThemeProps = { children: React.ReactNode };
