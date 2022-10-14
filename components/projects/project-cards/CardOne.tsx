@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import { useContext } from 'react';
-import ThemeContext from '@/context/darkModeContext';
+import { DarkContext } from '@/context/dark-context';
 import ProjectOne from '@/public/images/projects/project-one.png';
 // Icons
 import NodeIcon from '@/public/svgs/icons/node-icon.svg';
@@ -28,7 +28,7 @@ import {
 } from './Styles';
 
 const CardOne = () => {
-  const { darkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(DarkContext);
 
   const GithubIcon = (
     <svg

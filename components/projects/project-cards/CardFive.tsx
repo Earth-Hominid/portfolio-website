@@ -1,6 +1,6 @@
 import Image from 'next/future/image';
 import { useContext } from 'react';
-import ThemeContext from '@/context/darkModeContext';
+import { DarkContext } from '@/context/dark-context';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
@@ -28,7 +28,7 @@ import {
 type Props = {};
 
 const CardFive = (props: Props) => {
-  const { darkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(DarkContext);
   const GithubIcon = (
     <>
       {darkMode ? (

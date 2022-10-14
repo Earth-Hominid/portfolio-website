@@ -1,18 +1,19 @@
 import { createContext, useState, useMemo } from 'react';
-import {
-  DarkMode,
-  DarkModeValue,
-  ThemeContextType,
-  HandleChangeTheme,
-} from '../@types/theme';
+import { DarkMode, ThemeContextType } from '../types';
 
-const ThemeContext = createContext<ThemeContextType | null>(null);
+interface Props {
+  children: React.ReactNode;
+}
 
-export const ThemeProvider: React.FC<React.ReactNode> = ({ children }) => {
-  const [darkMode, setDarkMode] = useState<DarkMode>(false);
+const darkModeContext = createContext<ThemeContextType | null>(null);
+
+export const ThemeProvider: React.FC<Props> = ({ children }) => {
+  const [darkMode, setDarkMode] = useState<DarkMode>();
 
   const toggleTheme = () => {
-    setDarkMode((prevValue: DarkMode) => !prevValue);
+    if (darkMode !== null) {
+      setDarkMode((prevValue) => !prevValue);
+    }
   };
 
   const handleToggleThemeClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -20,21 +21,20 @@ export const ThemeProvider: React.FC<React.ReactNode> = ({ children }) => {
     toggleTheme();
   };
 
-  const darkModeValue = useMemo<DarkModeValue>(() => {
+  const darkModeValue = useMemo(() => {
     return [darkMode, setDarkMode];
   }, [darkMode, setDarkMode]);
 
   return (
-    <ThemeContext.Provider
+    <darkModeContext.Provider
       value={{
         darkMode,
         handleToggleThemeClick,
-        darkModeValue,
       }}
     >
       {children}
-    </ThemeContext.Provider>
+    </darkModeContext.Provider>
   );
 };
 
-export default ThemeContext;
+export default darkModeContext;

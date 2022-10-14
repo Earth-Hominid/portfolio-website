@@ -1,12 +1,12 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { ThemeProvider } from '@/context/darkModeContext';
+import { DarkProvider } from '@/context/dark-context';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider>
+    <DarkProvider>
       <Component {...pageProps} />
-    </ThemeProvider>
+    </DarkProvider>
   );
 }
 
