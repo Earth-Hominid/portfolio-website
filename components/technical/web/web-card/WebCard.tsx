@@ -15,10 +15,6 @@ type initial = {
   opacity: number;
 };
 
-type animate = {
-  x: Array<number | null>;
-};
-
 type transition = {
   duration: number;
   ease: string;
@@ -40,7 +36,6 @@ interface Props {
   styles: string;
   description: string;
   initial: initial;
-  animate: animate;
   transition: transition;
   whileInView: whileInView;
   viewport: viewport;
@@ -57,7 +52,6 @@ const WebCard: React.FC<Props> = ({
   styles,
   description,
   initial,
-  animate,
   transition,
   whileInView,
   viewport,
@@ -74,7 +68,6 @@ const WebCard: React.FC<Props> = ({
         </TextHolder>
         <motion.div
           initial={initial}
-          animate={animate}
           transition={transition}
           whileInView={whileInView}
           viewport={viewport}
