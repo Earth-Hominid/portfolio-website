@@ -33,13 +33,12 @@ const variants = {
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
 
-const Header = ({
-  handleToggleThemeClick,
-  darkMode,
-}: {
+interface DarkModeContextType {
+  darkMode: boolean | null;
   handleToggleThemeClick: Function;
-  darkMode: boolean | undefined;
-}) => {
+}
+
+const Header = ({ handleToggleThemeClick, darkMode }: DarkModeContextType) => {
   const [navigationMenuToggle, setNavigationMenuToggle] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -67,14 +66,10 @@ const Header = ({
         handleNavigationMenuClick={handleNavigationMenuClick}
         navigationMenuToggle={navigationMenuToggle}
         handleToggleThemeClick={handleToggleThemeClick}
-        darkMode={darkMode}
+        darkMode={darkMode!}
       />
       {navigationMenuToggle ? (
-        <BottomNavigation
-          handleNavigationMenuClick={handleNavigationMenuClick}
-          navigationMenuToggle={navigationMenuToggle}
-          toggleNavigationButton={toggleNavigationButton}
-        />
+        <BottomNavigation toggleNavigationButton={toggleNavigationButton} />
       ) : (
         ''
       )}

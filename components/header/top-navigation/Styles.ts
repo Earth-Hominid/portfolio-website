@@ -70,7 +70,7 @@ export const AbsoluteContainer = tw.div`
   group-hover:opacity-100
   transition
   group-hover:duration-300
-  duration-1000
+  duration-500
 `;
 
 export const StyledButton = tw.button`
