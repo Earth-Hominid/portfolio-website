@@ -7,12 +7,12 @@
 //   darkMode: boolean;
 // }
 
-export type darkModeType = boolean;
+// export type darkModeType = boolean;
 
-export interface DarkModeContextType {
-  handleToggleThemeClick: Function;
-  toggleTheme: React.Dispatch<React.SetStateAction<boolean>>;
-}
+// export interface DarkModeContextType {
+//   handleToggleThemeClick: Function;
+//   toggleTheme: React.Dispatch<React.SetStateAction<boolean>>;
+// }
 // export type DarkMode = true | false;
 // export type HandleChangeTheme = Function;
 

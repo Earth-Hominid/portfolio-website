@@ -3,7 +3,6 @@ import { createContext, useState, useEffect } from 'react';
 interface DarkModeContextType {
   darkMode: boolean | null;
   handleToggleThemeClick: Function;
-  toggleTheme: React.SetStateAction<boolean>;
 }
 type DarkModeType = boolean;
 
@@ -16,7 +15,7 @@ const theme = {
 export const DarkContext = createContext<DarkModeContextType | null>(null);
 
 export const DarkProvider = ({ children }: ThemeProps) => {
-  const [darkMode, setDarkMode] = useState<DarkModeType | null>(null);
+  const [darkMode, setDarkMode] = useState<DarkModeType | null>(false);
 
   // check and reset theme when `darkMode` changes
   useEffect(() => {
@@ -31,7 +30,7 @@ export const DarkProvider = ({ children }: ThemeProps) => {
   // check and reset theme
   const checkDarkMode = () => {
     if (
-      (darkMode !== null && localStorage.theme === 'dark') ||
+      localStorage.theme === 'dark' ||
       (!('theme' in localStorage) &&
         window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
@@ -52,6 +51,7 @@ export const DarkProvider = ({ children }: ThemeProps) => {
     }
     setDarkMode(!darkMode);
   };
+
   const handleToggleThemeClick = (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
     toggleTheme();
