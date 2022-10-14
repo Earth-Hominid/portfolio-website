@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply dark:bg-[#16181D];
+  }
+  :root {
+    @apply dark:bg-[#16181D]
+    dark:text-gray-200
+    bg-white;
+  }
+}
+
 @layer components {
   .icon {
     @apply h-8 
@@ -12,6 +23,16 @@
       md:hover:bg-stone-200 
       rounded-md 
       text-black;
+  }
+
+  .container {
+    @apply absolute
+  w-[60vw]
+  h-[90vh]
+  overflow-hidden
+  bg-white
+  rounded-lg
+  top-[-45vh];
   }
 }
 
@@ -71,6 +92,31 @@
       transparent 21px
     ),
     linear-gradient(90deg, rgb(253, 76, 251), rgb(73, 233, 121));
+}
+
+.dashboard-sparkle {
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 10px,
+      transparent 10px,
+      transparent 11px
+    ),
+    repeating-linear-gradient(
+      22.5deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 10px,
+      transparent 10px,
+      transparent 11px
+    ),
+    linear-gradient(
+      90deg,
+      hsl(194, 74%, 56%),
+      hsl(266, 74%, 56%),
+      hsl(338, 74%, 56%),
+      hsl(50, 74%, 56%),
+      hsl(122, 74%, 56%)
+    );
 }
 
 .indigo-gradient {

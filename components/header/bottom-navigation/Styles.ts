@@ -7,6 +7,7 @@ export const BottomNavigationMenu = tw.div`
  w-full
  md:hidden
  bg-white
+ dark:bg-[#16181D]
 `;
 
 export const ActionButtonHolder = tw.div`
@@ -21,6 +22,10 @@ export const ActionButtonHolder = tw.div`
   text-gray-800
 `;
 
-export const ActionLink = tw.a`
-  hover:text-blue-600
+export const LinkText = tw.h4`
+  text-black
+  dark:text-gray-200
+  dark:hover:text-blue-600
+  hover:text-indigo-600
+  cursor-pointer
 `;

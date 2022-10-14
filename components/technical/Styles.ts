@@ -1,12 +1,10 @@
 import tw from 'tailwind-styled-components';
 
-export const BackgroundContainer = tw.div`
+export const MainContainer = tw.div`
+  bg-white
+  dark:bg-[#16181D]
   h-screen
-  w-full
-`;
-
-export const VerticalSpace = tw.div`
-  pb-40
+  min-h-[950px]
 `;
 
 export const Spacer = tw.div`
@@ -14,4 +12,7 @@ export const Spacer = tw.div`
   bg-no-repeat
   bg-center
   bg-cover
+  h-screen
+  min-h-[825px]
+  xl:min-h-[105vh]
 `;

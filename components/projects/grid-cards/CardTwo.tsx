@@ -2,7 +2,7 @@ import Image from 'next/future/image';
 import Link from 'next/link';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
-import ProjectTwo from '@/public/images/vivacity.png';
+import ProjectTwo from '@/public/images/projects/project-two.png';
 
 import {
   TechIconContainer,
