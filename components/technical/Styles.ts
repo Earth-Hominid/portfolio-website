@@ -9,10 +9,11 @@ export const MainContainer = tw.div`
 
 export const Spacer = tw.div`
   aspect-video
-  bg-no-repeat
   bg-center
   bg-cover
+  bg-no-repeat
   h-screen
   min-h-[825px]
   xl:min-h-[105vh]
+  
 `;

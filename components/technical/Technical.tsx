@@ -1,8 +1,8 @@
 import React from 'react';
 import MobileTechnical from './mobile/MobileTechnical';
 import WebTechnical from './web/WebTechnical';
-import LightWave from '@/public/svgs/technical-wave-light.svg';
-import DarkWave from '@/public/svgs/technical-wave-dark.svg';
+import LightWave from '@/public/svgs/tech-light.svg';
+import DarkWave from '@/public/svgs/tech-dark.svg';
 import { MainContainer, Spacer } from './Styles';
 
 type Props = {};

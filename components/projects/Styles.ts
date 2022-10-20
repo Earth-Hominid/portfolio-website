@@ -1,7 +1,7 @@
 import tw from 'tailwind-styled-components';
 
 export const CardContainer = tw.div`
-   z-0 
+  z-0 
   h-screen
   min-h-[850px]
   w-full
