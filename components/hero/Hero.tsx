@@ -1,7 +1,7 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import CallToAction from '@/components/call-to-action/CallToAction';
-import LightWave from '@/public/svgs/wave-light-low.svg';
-import DarkWave from '@/public/svgs/wave-dark-low.svg';
+import LightWave from '@/public/svgs/light-wave.svg';
+import DarkWave from '@/public/svgs/dark-wave.svg';
 
 import {
   MainContainer,

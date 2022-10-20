@@ -1,11 +1,8 @@
 import tw from 'tailwind-styled-components';
 
 export const MainContainer = tw.div`
-  w-full
   dark:bg-[#16181D]
   bg-white
-  min-h-full
-  xl:h-[105vh]
 `;
 
 export const Spacer = tw.div`
@@ -13,9 +10,8 @@ export const Spacer = tw.div`
   bg-no-repeat
   bg-center
   bg-cover
-  h-screen
-  min-h-[825px]
-  xl:min-h-[105vh]
+  min-h-screen
+  lg:min-h-[950px]
 `;
 
 export const HeroContainer = tw.div`
@@ -89,7 +85,7 @@ export const IndigoText = tw.span`
 export const BlueUnderline = tw.span`
   underline-offset-4
   decoration-blue-600
-  dark:decoration-blue-500
+  dark:decoration-blue-400
   underline
   decoration-wavy
 `;
