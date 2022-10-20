@@ -32,7 +32,7 @@ export const LogoText = tw.h3`
 
 export const LinkText = tw.h3`
   hover:text-indigo-600
-  dark:hover:text-blue-600
+  dark:hover:text-blue-400
   cursor-pointer
   text-lg
 `;
