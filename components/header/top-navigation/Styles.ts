@@ -110,6 +110,7 @@ export const HeaderSpan = tw.span`
   shadow-md 
   text-slate-200 
   bg-gray-900 
+  dark:bg-[#23272F]
   text-xs 
   font-bold 
   transition-all 
