@@ -76,4 +76,5 @@ const Header = ({ handleToggleThemeClick, darkMode }: DarkModeContextType) => {
     </>
   );
 };
+
 export default Header;

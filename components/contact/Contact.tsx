@@ -1,4 +1,4 @@
-import CallToAction from '../call-to-action/CallToAction';
+import FormButton from '../form-button/FormButton';
 
 import {
   MainContainer,
@@ -8,12 +8,9 @@ import {
   InputLabelContainer,
   StyledInput,
   StyledLabel,
-  FormButton,
   TextAreaLabel,
   WideTextArea,
 } from './Styles';
-
-import { CallToActionButton } from '../call-to-action/Styles';
 
 const Contact = ({ darkMode }: { darkMode: boolean | undefined }) => {
   return (
@@ -30,7 +27,7 @@ const Contact = ({ darkMode }: { darkMode: boolean | undefined }) => {
                 <StyledInput
                   type="text"
                   id="Name"
-                  name="Name"
+                  name="name"
                   placeholder="Name"
                   min="2"
                   max="50"
@@ -67,10 +64,10 @@ const Contact = ({ darkMode }: { darkMode: boolean | undefined }) => {
                 maxLength={500}
                 spellCheck={true}
               />
-
               <div className="mt-6 mb-12">
-                <CallToAction
-                  styles="w-full p-2 flex justify-center"
+                <input
+                  type="button"
+                  className="w-full p-2 flex justify-center"
                   title="Submit"
                 />
               </div>
@@ -128,7 +125,7 @@ const Contact = ({ darkMode }: { darkMode: boolean | undefined }) => {
               />
 
               <div className="mt-6 mb-12">
-                <CallToAction
+                <FormButton
                   styles="w-full p-2 flex justify-center"
                   title="Submit"
                 />
