@@ -3,15 +3,18 @@ import tw from 'tailwind-styled-components';
 export const MainContainer = tw.div`
   dark:bg-[#16181D]
   bg-white
+   h-screen
+  min-h-[950px]
 `;
 
 export const Spacer = tw.div`
-  aspect-video
-  bg-no-repeat
+aspect-video
   bg-center
   bg-cover
-  min-h-[800px]
-  lg:min-h-[950px]
+  bg-no-repeat
+  h-screen
+  min-h-[825px]
+  xl:min-h-[105vh]
 `;
 
 export const HeroContainer = tw.div`

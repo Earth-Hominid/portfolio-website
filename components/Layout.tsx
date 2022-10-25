@@ -30,7 +30,7 @@ const Layout = () => {
         />
       </Head>
 
-      <div className="dark:bg-[#16181D] min-w-[600px]">
+      <div className="dark:bg-[#16181D] min-w-[400px]">
         <header id="header">
           <Header
             handleToggleThemeClick={handleToggleThemeClick}

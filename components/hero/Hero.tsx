@@ -34,6 +34,8 @@ const Hero = ({ darkMode }: { darkMode: boolean | undefined }) => {
         <Spacer
           style={{
             backgroundImage: `url(${DarkWave.src})`,
+            height: '100%',
+            width: '100%',
           }}
         >
           <HeroContainer>
@@ -68,8 +70,8 @@ const Hero = ({ darkMode }: { darkMode: boolean | undefined }) => {
         <Spacer
           style={{
             backgroundImage: `url(${LightWave.src})`,
-            width: '100%',
             height: '100%',
+            width: '100%',
           }}
         >
           <HeroContainer>
