@@ -10,7 +10,7 @@ export const Spacer = tw.div`
   bg-no-repeat
   bg-center
   bg-cover
-  min-h-screen
+  min-h-[800px]
   lg:min-h-[950px]
 `;
 
