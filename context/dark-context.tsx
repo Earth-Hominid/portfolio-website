@@ -22,9 +22,9 @@ export const DarkProvider = ({ children }: ThemeProps) => {
   const [darkMode, setDarkMode] = useState(false);
 
   // check and reset theme when `darkMode` changes
-  useEffect(() => {
-    return () => checkDarkMode();
-  }, [darkMode]);
+  // useEffect(() => {
+  //   return () => checkDarkMode();
+  // }, [darkMode]);
 
   // check theme on component mount
   useEffect(() => {
