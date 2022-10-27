@@ -111,6 +111,13 @@ export const RoseWavy = tw.span`
   decoration-rose-600
 `;
 
+export const DarkRoseWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-rose-500
+`;
+
 export const BlackWavy = tw.span`
   underline
   underline-offset-4

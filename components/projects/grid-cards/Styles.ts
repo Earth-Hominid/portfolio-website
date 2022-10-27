@@ -47,7 +47,6 @@ export const TechnologyDescription = tw.p`
   md:text-xs
   lg:text-sm
   text-black
-  dark:text-[#4FBCFF]
 `;
 
 export const ActionButtonHolder = tw.div`
@@ -133,4 +132,11 @@ export const BlackWavy = tw.span`
   underline-offset-4
   decoration-wavy
   decoration-black
+`;
+
+export const DarkRoseWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-rose-500
 `;
