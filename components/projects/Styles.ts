@@ -14,7 +14,7 @@ export const CardContainer = tw.div`
   items-center 
   bg-gray-100
   dark:bg-[#1D2433]
-  md:hidden
+  lg:hidden
 `;
 
 export const Title = tw.h3`

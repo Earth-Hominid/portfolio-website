@@ -83,9 +83,9 @@ const CustomFive = () => {
             />
           </TechIconContainer>
           <CardDescription className="text-white">
-            A MARVEL themed, one page modern React web application, built with
-            Functional Components, <DarkRoseWavy>React Hooks</DarkRoseWavy> and
-            simple state management.
+            A MARVEL themed modern React SPA. Built with Functional Components,{' '}
+            <DarkRoseWavy>React Hooks</DarkRoseWavy> and simple state
+            management.
           </CardDescription>
           <TechnologyDescription className="text-rose-500">
             React | CSS3
@@ -149,9 +149,8 @@ const CustomFive = () => {
             />
           </TechIconContainer>
           <CardDescription>
-            A MARVEL themed, one page modern React web application, built with
-            Functional Components, <RoseWavy>React Hooks</RoseWavy> and simple
-            state management.
+            A MARVEL themed modern React SPA. Built with Functional Components,{' '}
+            <RoseWavy>React Hooks</RoseWavy> and simple state management.
           </CardDescription>
           <TechnologyDescription className="text-black">
             React | CSS3

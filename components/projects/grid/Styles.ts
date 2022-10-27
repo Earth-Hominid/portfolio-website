@@ -1,7 +1,7 @@
 import tw from 'tailwind-styled-components';
 
 export const MainSection = tw.section`
-  md:grid
+  lg:grid
   place-items-center
   hidden
   bg-gray-100
