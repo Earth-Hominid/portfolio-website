@@ -14,11 +14,11 @@ export const CardContainer = tw.div`
   items-center 
   bg-gray-100
   dark:bg-[#1D2433]
-
+  md:hidden
 `;
 
 export const Title = tw.h3`
-   text-4xl
+  text-4xl
   leading-snug
   tracking-wide
   font-rubik

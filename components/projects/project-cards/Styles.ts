@@ -36,6 +36,7 @@ export const TechIconContainer = tw.div`
 `;
 
 export const Description = tw.p`
+dark:text-white
 text-gray-800
   font-rubik
   text-sm
@@ -50,6 +51,8 @@ export const TechnologyDescription = tw.p`
   font-rubik
   max-w-xs
   text-xs
+  text-black
+  dark:text-[#4FBCFF]
 `;
 
 export const ActionButtonHolder = tw.div`

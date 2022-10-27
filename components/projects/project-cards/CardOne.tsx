@@ -5,6 +5,7 @@ import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import { useContext } from 'react';
 import { DarkContext } from '@/context/dark-context';
 import ProjectOne from '@/public/images/projects/project-one.png';
+
 // Icons
 import NodeIcon from '@/public/svgs/icons/node-icon.svg';
 import NextIconDark from '@/public/svgs/icons/next-icon-dark.svg';
@@ -75,19 +76,19 @@ const CardOne = () => {
         />
       </TechIconContainer>
       {darkMode ? (
-        <Description className="dark:text-white">
+        <Description>
           An easy to use web application that strengthens business organizations
           by providing infrastructure for learning and{' '}
           <DarkBlueWavy>secure</DarkBlueWavy> collaboration.
         </Description>
       ) : (
-        <Description className="dark:text-white">
+        <Description>
           An easy to use web application that strengthens business organizations
           by providing infrastructure for learning and <Wavy>secure</Wavy>{' '}
           collaboration.
         </Description>
       )}
-      <TechnologyDescription className="text-black dark:text-[#4FBCFF]">
+      <TechnologyDescription>
         TypeScript | NextJS | Node | PostgreSQL | StrapiJS | Tailwind CSS
       </TechnologyDescription>
       <ActionButtonHolder>
