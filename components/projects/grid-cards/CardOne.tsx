@@ -92,7 +92,7 @@ const CardOne = () => {
           collaboration.
         </CardDescription>
       )}
-      <TechnologyDescription className="text-black">
+      <TechnologyDescription className="text-black dark:text-[#4FBCFF]">
         TypeScript | NextJS | Node | PostgreSQL | StrapiJS | TailwindCSS
       </TechnologyDescription>
       <ActionButtonHolder>

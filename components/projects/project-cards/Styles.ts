@@ -51,8 +51,6 @@ export const TechnologyDescription = tw.p`
   font-rubik
   max-w-xs
   text-xs
-  text-black
-  dark:text-[#4FBCFF]
 `;
 
 export const ActionButtonHolder = tw.div`
