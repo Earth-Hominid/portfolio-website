@@ -23,12 +23,12 @@ import {
   IconHolder,
   RoseWavy,
   TechnologyDescription,
+  DarkRoseWavy,
 } from './Styles';
 
-type Props = {};
-
-const CardFive = (props: Props) => {
+const CardFive = () => {
   const { darkMode } = useContext(DarkContext);
+
   const GithubIcon = (
     <>
       {darkMode ? (
@@ -55,7 +55,7 @@ const CardFive = (props: Props) => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
           >
-            <Image src={ProjectFive} alt="Inventory Managment wesbite" />
+            <Image src={ProjectFive} alt="Memory Card Game" />
           </motion.div>
           <Title className="text-rose-500">Memory Card Game</Title>
           <TechIconContainer>
@@ -82,7 +82,8 @@ const CardFive = (props: Props) => {
           </TechIconContainer>
           <Description className="text-white">
             A MARVEL themed modern React SPA. Built with Functional Components,{' '}
-            <RoseWavy>React Hooks</RoseWavy> and simple state management.
+            <DarkRoseWavy>React Hooks</DarkRoseWavy> and simple state
+            management.
           </Description>
           <TechnologyDescription className="text-rose-500">
             React | CSS3

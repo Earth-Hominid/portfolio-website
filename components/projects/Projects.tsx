@@ -16,17 +16,20 @@ type Props = {};
 
 const Projects = (props: Props) => {
   return (
-    <CardContainer>
-      <Title>Featured Projects</Title>
-      <Container>
-        <CardOne />
-        <CardTwo />
-        <CardThree />
-        <CardFour />
-        <CardFive />
-        <CardSix />
-      </Container>
-    </CardContainer>
+    <>
+      <CardContainer>
+        <Title>Featured Projects</Title>
+        <Container>
+          <CardOne />
+          <CardTwo />
+          <CardThree />
+          <CardFour />
+          <CardFive />
+          <CardSix />
+        </Container>
+      </CardContainer>
+      <Grid />
+    </>
   );
 };
 

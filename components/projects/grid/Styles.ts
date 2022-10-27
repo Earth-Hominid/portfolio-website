@@ -1,10 +1,11 @@
 import tw from 'tailwind-styled-components';
 
 export const MainSection = tw.section`
-  md:grid
+  lg:grid
   place-items-center
   hidden
   bg-gray-100
+  dark:bg-[#1D2433]
   mb-4
 `;
 
@@ -22,6 +23,8 @@ export const TextContainer = tw.div`
   row-start-1
   grid-cols-2
   mx-2
+  text-black
+  dark:text-gray-200
 `;
 
 export const SectionTitle = tw.h1`
@@ -29,6 +32,7 @@ export const SectionTitle = tw.h1`
   font-bold
   mb-2
   xs:mb-4
+  font-rubik
 `;
 
 export const Subheading = tw.p`

@@ -26,7 +26,8 @@ export const TechIconContainer = tw.div`
 `;
 
 export const CardDescription = tw.p`
-  text-gray-700
+dark:text-white
+  text-gray-800
   font-rubik
   text-center
   text-sm
@@ -45,6 +46,7 @@ export const TechnologyDescription = tw.p`
   lg:max-w-sm
   md:text-xs
   lg:text-sm
+  text-black
 `;
 
 export const ActionButtonHolder = tw.div`
@@ -83,11 +85,32 @@ export const Wavy = tw.span`
   decoration-blue-600
 `;
 
+export const DarkBlueWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-[#4FBCFF]
+`;
+
+export const DarkGreenWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-[#00B3A6]
+`;
+
 export const IndigoWavy = tw.span`
   underline
   underline-offset-4
   decoration-wavy
   decoration-indigo-600
+`;
+
+export const DarkIndigoWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-[#BB86FC]
 `;
 
 export const OrangeWavy = tw.span`
@@ -109,4 +132,11 @@ export const BlackWavy = tw.span`
   underline-offset-4
   decoration-wavy
   decoration-black
+`;
+
+export const DarkRoseWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-rose-500
 `;

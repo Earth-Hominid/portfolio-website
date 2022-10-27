@@ -36,6 +36,7 @@ export const TechIconContainer = tw.div`
 `;
 
 export const Description = tw.p`
+dark:text-white
 text-gray-800
   font-rubik
   text-sm
@@ -108,6 +109,13 @@ export const RoseWavy = tw.span`
   underline-offset-4
   decoration-wavy
   decoration-rose-600
+`;
+
+export const DarkRoseWavy = tw.span`
+  underline
+  underline-offset-4
+  decoration-wavy
+  decoration-rose-500
 `;
 
 export const BlackWavy = tw.span`
