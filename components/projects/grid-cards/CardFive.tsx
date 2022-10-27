@@ -1,5 +1,7 @@
 import Image from 'next/future/image';
 import Link from 'next/link';
+import { useContext } from 'react';
+import { DarkContext } from '@/context/dark-context';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import ProjectFive from '@/public/images/projects/project-five.png';
 import { motion } from 'framer-motion';
@@ -22,6 +24,8 @@ import {
 } from './Styles';
 
 const CustomFive = () => {
+  const { darkMode } = useContext(DarkContext);
+
   const GithubIcon = (
     <svg
       className={`h-6 w-6 ml-2 group-hover:fill-[#D3AF37] transition duration-300`}
@@ -36,7 +40,7 @@ const CustomFive = () => {
       transition={{ duration: 1.2 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="flex flex-col items-center rounded-xl rose-gradient border-[1px] shadow-xl border-gray-300 space-y-5"
+      className="flex flex-col items-center rounded-xl rose-gradient border-[1px] shadow-xl border-gray-300 space-y-5 dark:bg-[#121212] dark:border-gray-900"
     >
       <Image
         src={ProjectFive}

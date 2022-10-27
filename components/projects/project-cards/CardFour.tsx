@@ -28,7 +28,7 @@ import {
 
 type Props = {};
 
-const CardThree = (props: Props) => {
+const CardFour = (props: Props) => {
   const GithubIcon = (
     <svg
       className={`h-6 w-6 ml-2 group-hover:fill-indigo-400 dark:fill-white transition duration-300`}
@@ -170,4 +170,4 @@ const CardThree = (props: Props) => {
   );
 };
 
-export default CardThree;
+export default CardFour;
