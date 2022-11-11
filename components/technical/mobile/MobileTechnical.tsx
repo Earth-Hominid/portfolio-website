@@ -24,7 +24,7 @@ function MobileTechnical({}: Props) {
                 w-40
                 h-auto 
                 shadow-2xl"
-        initial={{ x: 50, y: -50 }}
+        initial={{ x: -75, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         whileInView={{ y: 0, x: 0 }}
@@ -43,7 +43,7 @@ function MobileTechnical({}: Props) {
                 w-40
                 h-auto 
                 shadow-2xl"
-        initial={{ x: -50, y: -50 }}
+        initial={{ x: 75, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         whileInView={{ y: 0, x: 0 }}
