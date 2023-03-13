@@ -106,7 +106,7 @@ const CardTwo = () => {
         React | Redux | Express | Node | MongoDB | Mongoose | TailwindCSS
       </TechnologyDescription>
       <ActionButtonHolder>
-        <Link href="https://blog-creator-mern-app.herokuapp.com/">
+        <Link href="https://vivacity-blog.herokuapp.com/">
           <a target="_blank">
             <WebsiteButton
               className="
@@ -131,7 +131,7 @@ const CardTwo = () => {
             </WebsiteButton>
           </a>
         </Link>
-        <Link href="https://github.com/Earth-Hominid/Blog-Creator-API">
+        <Link href="https://github.com/Earth-Hominid/Vivacity-Blog-Creator">
           <a target="_blank">
             <WebsiteButton
               className="
