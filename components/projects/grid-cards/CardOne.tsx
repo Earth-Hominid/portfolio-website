@@ -53,7 +53,7 @@ const CardOne = () => {
       />
 
       <CardTitle className="text-black dark:text-[#4FBCFF]">
-        Business Learning Platform
+        Business Learning Portal
       </CardTitle>
       <TechIconContainer>
         <Image
@@ -96,7 +96,7 @@ const CardOne = () => {
         TypeScript | NextJS | Node | PostgreSQL | StrapiJS | TailwindCSS
       </TechnologyDescription>
       <ActionButtonHolder>
-        <Link href="https://rbsdocsfrontend.vercel.app/">
+        <Link href="https://learningportal-xi.vercel.app">
           <a target="_blank">
             <WebsiteButton
               className="
@@ -118,7 +118,7 @@ const CardOne = () => {
             </WebsiteButton>
           </a>
         </Link>
-        <Link href="https://github.com/Earth-Hominid/Business-Communication-Platform-Full-Stack">
+        <Link href="https://github.com/Earth-Hominid/Learning-Portal">
           <a target="_blank">
             <WebsiteButton
               className="hover:bg-blue-500 bg-white text-black transition duration-300 hover:text-white dark:bg-blue-400
